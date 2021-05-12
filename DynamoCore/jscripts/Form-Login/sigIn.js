@@ -1,5 +1,6 @@
 
  var flag=1;
+ 
 function passDisplay(){
     if(flag)
     {
@@ -17,3 +18,6 @@ function passDisplay(){
     }
 
 }
+document.querySelector('.img__btn').addEventListener('click', function() {
+    document.querySelector('.cont').classList.toggle('s--signup');
+  });
