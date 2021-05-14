@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../../../css/Layout.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="icon"
+      href="../img/icon/LOGO_NoBackground.png"
+      sizes="16x16"
+      type="image/x-icon"
+    />
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya Sans SC"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9ccb26cf81.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Fonts-->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js"
+      integrity="sha512-Jen3K+iRN4thSYDEyHwUGYFxNslAUCTV9P/g0k836eaoq/tplAUCzRPUyDxKUjBlKdJhamW7S3u7NWSGEEdIQw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Dynamo Core</title>
+  </head>
+
+  <body>
+    <!-- horizontal navbar -->
+    <header>
+      <div class="wrapHead">
+        <nav class="navbar navbar-default" id="mNavbar">
+          <div class="container-fluid" id="navtop">
+            <div class="navbar-header">
+              <a id="txtdeco" href="DynamoCore.html">
+                <img
+                  class="img img-rounded imgstat"
+                  alt="Navbar_logo"
+                  src="../../../../img/icon/LOGO_NoBackground.png"
+                  width="50"
+                  height="50"
+                  class="d-inline-block align-top"
+                />
+              </a>
+              <span><a id="head" href="DynamoCore.html">Dynamo Core</a></span>
+            </div>
+            <ul class="nav navbar-nav navbar">
+              <li class="auraButton">
+                <a id="auraButtontext" href="../../../../html/Projects/projectsMain.html"
+                  >COMMUNITY</a
+                >
+              </li>
+              <li class="auraButton">
+                <a id="auraButtontext" href="../../../../html/Articles/ArticlesMain.html"
+                  >ARTICLES</a
+                >
+              </li>
+              <li class="auraButton">
+                <a id="auraButtontext" href="../../../../html/Languages/LangGuide.html"
+                  >LANG-GUIDES</a
+                >
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar" id="loginNav">
+              <li>
+                <a
+                  id="auraButtontext"
+                  href="../../../../html/FORMS/sign_up.html"
+                  class="LoGup"
+                  ><span class="glyphicon glyphicon-user"></span> Sign Up</a
+                >
+              </li>
+              <li>
+                <a
+                  id="auraButtontext"
+                  href="../../../../html/FORMS/sign_in.html"
+                  class="LoGin"
+                  onclick="logCheck()"
+                  ><span class="glyphicon glyphicon-log-in"></span> Login</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+    <!--content-->
+
+    <h1 class="hd1">C Variables, Constants and Literals</h1>
+    <p class="cont">In this tutorial, you will learn about variables and rules for naming a variable. You will also learn about
+         different literals in C programming and how to create constants.</p>
+
+    <h3 class="hd3">Variables</h3>
+    <p class="cont">In programming, a variable is a container (storage area) to hold data.</p>
+    <p class="cont">To indicate the storage area, each variable should be given a unique name (identifier). Variable names are 
+           just the symbolic representation of a memory location. For example:</p>
+    <p class="code">int playerScore = 95;</p>
+    <p class="cont">Here, <span class="emphas">playerScore</span> is a variable of <span class="emphas">int</span> type. Here, 
+        the variable is assigned an integer value <span class="emphas">95</span></p>
+    <p class="cont">The value of a variable can be changed, hence the name variable.</p>
+
+    <p class="code">char ch = 'a';<br>
+        // some code<br>
+        ch = 'l';</p>
+    
+    <h4 class="hd4">Rules for naming a variable</h4>
+    <ol class="list-group">
+        <li>A variable name can only have letters (both uppercase and lowercase letters), digits and underscore.</li>
+        <li>The first letter of a variable should be either a letter or an underscore.</li>
+        <li>There is no rule on how long a variable name (identifier) can be. However, you may run into problems in some compilers 
+            if the variable name is longer than 31 characters.</li>
+    </ol>
+    
+    <p class="note">Note: You should always try to give meaningful names to variables. For example: <span class="emphas">firstName</span> is a better variable name than <span class="emphas">fn</span></p>
+    
+    <p class="cont">
+        C is a strongly typed language. This means that the variable type cannot be changed once it is declared. For example:
+    </p>
+    <p class="code">int number = 5;      // integer variable<br>
+        number = 5.5;        // error<br>
+        double number;       // error
+    </p>
+
+    <p class="cont">Here, the type of <span class="emphas">number</span> variable is <soan class="emphas">int</soan> You cannot assign 
+        a floating-point (decimal) value <span class="emphas">5.5</span> to this variable. Also, you cannot redefine the data type of the variable to <span class="emphas">double</span> 
+        By the way, to store the decimal values in C, you need to declare its type to either <span class="emphas">double</span> or <span class="emphas">float</span>
+    </p>
+    
+    <h3 class="hd3">Literals</h3>
+    <p class="cont">Literals are data used for representing fixed values. They can be used directly in the code. For example: <span class="emphas">1</span>, <span class="emphas">2.5</span>, <span class="emphas">'c'</span> etc.</p>
+    <p class="cont">Here, <span class="emphas">1</span> , <span class="emphas">2.5</span> and <span class="emphas">'c'</span> are literals. Why? You cannot assign different values to these terms.</p>
+
+    <h4 class="hd4">1. Integers</h4>
+    <p class="cont">
+        An integer is a numeric literal(associated with numbers) without any fractional or exponential part. There are three types of integer literals in C programming:
+    </p>
+    <ul class="list-group">
+        <li>decimal (base 10)</li>
+        <li>octal (base 8))</li>
+        <li>hexadecimal (base 16</li>
+    </ul>
+
+    <p class="cont">For example:</p>
+
+    <p class="code">
+Decimal: 0, -9, 22 etc<br>
+Octal: 021, 077, 033 etc<br>
+Hexadecimal: 0x7f, 0x2a, 0x521 etc
+    </p>
+    <p class="cont">In C programming, octal starts with a <span class="emphas">0</span> and hexadecimal starts with a <span class="emphas">0x</span>
+    </p>
+
+    <h4 class="hd4">2. Floating-point Literals</h4>
+    <p class="cont">A floating-point literal is a numeric literal that has either a fractional form or an exponent form. For example:</p>
+
+    <p class="code">
+-2.0<br>
+0.0000234<br>
+-0.22E-5
+    </p>
+    <p class="note">Note: <span class="emphas">E-5 = 10-5</span></p>
+
+   <h4 class="hd4">v</h4>
+   <p class="cont">
+       A character literal is created by enclosing a single character inside single quotation marks. For example: <span class="emphas">'a'</span>, <span class="emphas">'m'</span>, <span class="emphas">'F'</span>, <span class="emphas">'2'</span>, <span class="emphas">'}'</span> etc.
+   </p>
+   
+   <h4 class="hd4">4. Escape Sequences</h4>
+   <p class="cont">
+    Sometimes, it is necessary to use characters that cannot be typed or has special meaning in C programming. For example: newline(enter), tab, question mark etc.
+   </p>
+   <p class="cont">
+    In order to use these characters, escape sequences are used.
+   </p>
+
+   <table summary="A list of escape sequences used in C programming language">
+	<caption>Escape Sequences</caption>
+	<thead>
+		<tr>
+			<th scope="col">Escape Sequences</th>
+			<th scope="col">Character</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>\b</code></td>
+			<td>Backspace</td>
+		</tr>
+		<tr>
+			<td><code>\f</code></td>
+			<td>Form feed</td>
+		</tr>
+		<tr>
+			<td><code>\n</code></td>
+			<td>Newline</td>
+		</tr>
+		<tr>
+			<td><code>\r</code></td>
+			<td>Return</td>
+		</tr>
+		<tr>
+			<td><code>\t</code></td>
+			<td>Horizontal tab</td>
+		</tr>
+		<tr>
+			<td><code>\v</code></td>
+			<td>Vertical tab</td>
+		</tr>
+		<tr>
+			<td><code>\\</code></td>
+			<td>Backslash</td>
+		</tr>
+		<tr>
+			<td><code>\&#39;</code></td>
+			<td>Single quotation mark</td>
+		</tr>
+		<tr>
+			<td><code>\&quot;</code></td>
+			<td>Double quotation mark</td>
+		</tr>
+		<tr>
+			<td><code>\?</code></td>
+			<td>Question mark</td>
+		</tr>
+		<tr>
+			<td><code>\0</code></td>
+			<td>Null character</td>
+		</tr>
+	</tbody>
+</table>
+    <p class="cont">For example: <span class="emphas">\n</span> is used for a newline. The backslash <span class="emphas">\</span> causes escape from the normal way the characters are handled by the compiler.</p>
+    
+    <h4 class="hd4">5. String Literals</h4>
+    <p class="cont">A string literal is a sequence of characters enclosed in double-quote marks. For example:</p>
+    
+    <p class="code">
+&quot;good&quot;                  //string constant<br>
+&quot;&quot;                     //null string constant<br>
+&quot;      &quot;               //string constant of six white space<br>
+&quot;x&quot;                    //string constant having a single character.<br>
+&quot;Earth is round\n&quot;         //prints string with a newline
+    </p>
+
+    <h2 class="hd2" id="constants">Constants</h2>
+
+    <p>If you want to define a variable whose value cannot be changed, you can use the&nbsp;<span class="emphas">const</span> keyword. This will create a constant. For example,</p>
+
+    <p class="code">const double PI = 3.14;</p>
+
+    <p>Notice, we have added keyword <span class="emphas">const</span></p>
+
+    <p>Here, <span class="emphas">PI</span> is a symbolic constant; its value cannot be changed.</p>
+
+    <p class="code">
+    const double PI = 3.14;
+    PI = 2.9; //Error
+    </p>
+
+    <p>You can also define a constant using the <code>#define</code> preprocessor directive.</p>
+  
+    
+    <!--content end-->
+    <script src="../../../../jscripts/Loginlogic.js"></script>
+    <!--Footer-->
+
+    <footer class="footer-content">
+      <div class="jumbotron text-md-left">
+        <span class="ribbonfootz"
+          ><span class="ribbonfoot footer-text">Get In Touch!</span></span
+        >
+        <div class="row">
+          <div class="col-md-5">
+            <img src="../../../../img/icon/DC.png" alt="footer-img" id="footer-img" />
+            <h3 class="footer-text text-left">Dynamo Core:</h3>
+            <p id="footercontent">
+              Dynamo Core was made in the hopes to provide a place for the
+              global community to come together at a place to talk on things
+              that they like to and want to do. We hope that it becomes a part
+              of your journey as a place to learn and share and its you who can
+              make this community grow.
+            </p>
+          </div>
+
+          <div class="col-md-2"></div>
+          <div class="col-md-2">
+            <h4 class="text-uppercase text-left footCol">Articles</h4>
+            <ul class="list-unstyled text-left">
+              <li>
+                <a
+                  href="../../../../html/Articles/Penetration
+                  Testing.html"
+                  >Penetration Testing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../../../html/Articles/Phishing
+                  Security.html"
+                  >Phishing Security</a
+                >
+              </li>
+              <li><div style="color: #337ab7">Coming Soon!</div></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4 class="text-uppercase text-left footCol">Language Guides</h4>
+            <ul class="list-unstyled text-left">
+              <li><a href="../../../../html/Languages/C/intro/historyofc.html">C</a></li>
+              <li>
+                <a href="../../../../html/Languages/C++/intro/HistoryofC++.html">C++</a>
+              </li>
+              <li><div style="color: #337ab7">Java(Coming Soon!)</div></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" id="footerLinksTxt">
+          <div class="col-md-7" id="footerLinksTxt">
+            <p class="footer-text">Share your thoughts, and leave a Like</p>
+          </div>
+          <div class="col-md-5" id="footerLinks">
+            <p class="text-left">
+              <a
+                href="https://facebook.com/"
+                class="social-round-icon orange-round-icon fa-icon"
+                title=""
+              >
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://twitter.com/"
+                class="social-round-icon orange-round-icon fa-icon"
+                title=""
+              >
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                class="social-round-icon orange-round-icon fa-icon"
+                title=""
+              >
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright text-center" id="cpyrgt">
+        © 2021 Copyright:
+        <a href="../../../../DynamoCore.html"> DynamoCore.com</a>
+      </div>
+    </footer>
+    <!--Footer-->
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
+
+<!--Pallete 
+      #E7717D
+
+  #C2CAD0
+
+    #C28980
+
+    #7E685A
+
+  #AFD275
+
+   #464648
+        
+    -->
