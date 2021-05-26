@@ -4,7 +4,9 @@ body {
 
 maincontent {
   display: none;
-  background-color: #1d2529;}
+  background-color: #1d2529;
+  user-select: none;
+}
 
 .preload {
   width: 100%;
@@ -328,6 +330,20 @@ body {
   margin-top: 85px;
 }
 
+div#content1col:hover{
+  transform: scale(1.06);
+}
+
+div#content2col:hover{
+  transform: scale(1.06);
+}
+
+div#content3col:hover {
+  transform: scale(1.06);
+}
+div#content1col,div#content3col{
+  left: 70px;
+}
 .hcontent {
   margin: 130px -21px 60px 358px !important;
   text-align: justify;
