@@ -4,7 +4,7 @@ body {
 
 maincontent {
   display: none;
-}
+  background-color: #1d2529;}
 
 .preload {
   width: 100%;
@@ -140,6 +140,7 @@ maincontent {
     to(rgb(98 81 70))
   );
   top: 42px;
+  z-index: 1;
 }
 
 .htext {
@@ -163,7 +164,7 @@ body {
   display: inline;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0!important;
 }
 
 .vliner {

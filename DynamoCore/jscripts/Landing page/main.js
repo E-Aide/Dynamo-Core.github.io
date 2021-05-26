@@ -26,7 +26,7 @@ function BGanim() {
     set selector(value) {
       this._selector = value;
     },
-    color: '#C2CAD0',
+    color: '#c2cad0',
     speed: .125,
     maxParticles: 110,
     connectParticles: true,
