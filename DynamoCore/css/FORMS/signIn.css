@@ -41,7 +41,7 @@ button {
   height: 90%;
   transition: transform 1.2s ease-in-out;
   padding: 50px 30px 0;
-  margin-top: 20px;
+  margin-top: 28px;
   background: #fff;
 }
 
@@ -53,13 +53,17 @@ button {
   width: 900px;
   height: 100%;
   padding-left: 260px;
-  background: #fff;
+  background: #030303;
   transition: transform 1.2s ease-in-out;
 }
 
+.form.sign-up {
+  width: 612px!important;
+}
 
 .cont.s--signup .sub-cont {
   transform: translate3d(-640px, 0, 0);
+
 }
 
 button {
@@ -90,9 +94,10 @@ button {
   top: 0;
   width: 900px;
   height: 100%;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg");
+  background-image: url("../../img/backgrounds/LoginbackPic.jpg");
   background-size: cover;
   transition: transform 1.2s ease-in-out;
+  background-position: center;
 }
 .Signimg:after {
   content: "";

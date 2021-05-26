@@ -27,11 +27,10 @@ document.querySelector('.img__btn').addEventListener('click', function() {
     $('.cont').css({ top: (($(window).height() / 2) - (main.height() / 2)) + 50 + "px" });
   });
 
-  function passwordVerify()
+function passwordVerify()
 {
-    if(document.getElementById('password').value==document.getElementById('conPassword').value)
+    if(document.getElementById('pass').value==document.getElementById('conPassw').value)
     {
-        localStorage.setItem("passCheck",1);
         document.querySelector('.chekPass').textContent=" *Confirmed";
     }
     else
