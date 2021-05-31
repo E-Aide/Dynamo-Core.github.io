@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/Layout.css" />
+    <link rel="stylesheet" href="../../css/articles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="icon" href="../../img/icon/log2.png" type="image/x-icon" />
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya Sans SC"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9ccb26cf81.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Fonts-->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js"
+      integrity="sha512-Jen3K+iRN4thSYDEyHwUGYFxNslAUCTV9P/g0k836eaoq/tplAUCzRPUyDxKUjBlKdJhamW7S3u7NWSGEEdIQw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Dynamo Core</title>
+  </head>
+
+  <body>
+<!-- horizontal navbar -->
+<nav class="navbar navbar-default" id="mNavbar">
+  <div class="container-fluid" id="navtop">
+    <div class="navbar-header">
+      <a id="txtdeco" href="../../Dynamo Core.html">
+        <img
+          class="img img-rounded imgstat"
+          alt="Navbar_logo"
+          src="../../img/icon/Log.png"
+          width="50"
+          height="50"
+          class="d-inline-block align-top"
+        />
+      </a>
+      <span><a id="head" href="../../Dynamo Core.html">Dynamo Core</a></span>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="vline">
+        <a href="../../html/Projects/projectsMain.html">PROJECTS</a>
+      </li>
+      <li><a href="../../html/Articles/ArticlesMain.html">ARTICLES</a></li>
+      <li><a href="../../html/Languages/LangGuide.html">LANG-GUIDES</a></li>
+      <li class="vline">
+        <a href="../../html/FORMS/sign_up.html" class="LoGup"
+          ><span class="glyphicon glyphicon-user"></span> Sign Up</a
+        >
+      </li>
+      <li>
+        <a href="../../html/FORMS/sign_in.html" class="LoGin" onclick="logCheck()"
+          ><span class="glyphicon glyphicon-log-in "></span> Login</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- horizontal navbar -->
+  <div class="container ArtMain">
+    <div class="container">
+      <h1  class="artTextCont">Cryptography</h1>
+      <h3>What is this?!</h3>
+      <p id="description">
+        Cryptography is a method of protecting information and communications through the use of codes, so that only those for whom the information is intended can read and process it. The prefix "crypt-" means "hidden" or "vault" -- and the suffix "-graphy" stands for "writing."
+      </p>
+      <h3>Objectives</h3>
+      <p id="benefits">
+        Modern cryptography concerns itself with the following four objectives:
+        <ul>
+          <li><strong>Confidentiality:</strong> the information cannot be understood by anyone for whom it was unintended</li>
+          <li><strong>Integrity:</strong> the information cannot be altered in storage or transit between sender and intended receiver without the alteration being detected</li>
+          <li><strong>Non-repudiation:</strong> the creator/sender of the information cannot deny at a later stage his or her intentions in the creation or transmission of the information</li>
+          <li><strong>Authentication:</strong> the sender and receiver can confirm each other's identity and the origin/destination of the information</li>
+        </ul>
+      </p>
+      <h3>What is are Cryptographic Algorithms??</h3>
+      <p id="description">
+        Cryptosystems use a set of procedures known as cryptographic algorithms, or ciphers, to encrypt and decrypt messages to secure communications among computer systems, devices such as smartphones, and applications. A cipher suite uses one algorithm for encryption, another algorithm for message authentication, and another for key exchange. This process, embedded in protocols and written in software that runs on operating systems and networked computer systems, involves public and private key generation for data encryption/decryption, digital signing and verification for message authentication, and key exchange.
+      </p>
+      <h3>What types of Cryptography are there?</h3>
+      <p id="categories">
+        Single-key or symmetric-key encryption algorithms create a fixed length of bits known as a block cipher with a secret key that the creator/sender uses to encipher data (encryption) and the receiver uses to decipher it. Types of symmetric-key cryptography include the Advanced Encryption Standard (AES), a specification established in November 2001 by the National Institute of Standards and Technology as a Federal Information Processing Standard (FIPS 197), to protect sensitive information. The standard is mandated by the U.S. government and widely used in the private sector.
+      </p>
+      <p>
+        In June 2003, AES was approved by the U.S. government for classified information. It is a royalty-free specification implemented in software and hardware worldwide. AES is the successor to the Data Encryption Standard (DES) and DES3. It uses longer key lengths (128-bit, 192-bit, 256-bit) to prevent brute force and other attacks.
+      </p>
+      <p>
+        Public-key or asymmetric-key encryption algorithms use a pair of keys, a public key associated with the creator/sender for encrypting messages and a private key that only the originator knows (unless it is exposed or they decide to share it) for decrypting that information. The types of public-key cryptography include RSA, used widely on the internet; Elliptic Curve Digital Signature Algorithm (ECDSA) used by Bitcoin; Digital Signature Algorithm (DSA) adopted as a Federal Information Processing Standard for digital signatures by NIST in FIPS 186-4; and Diffie-Hellman key exchange.
+      </p>
+      <p>
+        To maintain data integrity in cryptography, hash functions, which return a deterministic output from an input value, are used to map data to a fixed data size. Types of cryptographic hash functions include SHA-1 (Secure Hash Algorithm 1), SHA-2 and SHA-3.
+      </p>
+      <h3>Great! Now to summarize all of this.</h3>
+      <p>
+        To conclude this documentation, we can say that Cryptography is important as it helps us data so that no unauthorized user or system can access any confidential data transfered between them.
+      </p>
+    </div>
+  </div>
+<!--Footer-->
+    <footer class="footer-content">
+      <div class="jumbotron text-md-left">
+        <span class="ribbonfootz"
+          ><span class="ribbonfoot footer-text">Get In Touch!</span></span
+        >
+        <div class="row">
+          <div class="col-md-5">
+            <img src="../../img/icon/Log.png" alt="footer-img" id="footer-img" />
+
+            <h3 class="footer-text text-left">Dynamo Core:</h3>
+            <p id="footercontent">
+              Dynamo Core is an interactive, ever growing platform to design and
+              develop projects, to acquire new and essential tech aspects
+              without leaving behind the essential building blocks i.e.
+              languages . All in all a tech pill to enhance and channel your
+              creative & reasoning mind in the right output stream.
+            </p>
+          </div>
+
+          <div class="col-md-2 " id="footert">
+            <h4 class="text-uppercase text-left  footCol">Projects</h4>
+            <ul class="list-unstyled text-left">
+              <li>
+                <a href="../../html/Projects/Arduino/EMO project.html">EMO Display</a>
+              </li>
+              <li>
+                <a
+                  href="../../html/Projects/Arduino/4x3 input keypad with matrix display.html"
+                  >Input Keypad with Led Matrix display
+                </a>
+              </li>
+              <li>
+                <a href="../../html/Projects/Arduino/Joystick module.html"
+                  >Joystick module</a
+                >
+              </li>
+              <li>
+                <a href="../../html/Projects/Arduino/LCD display.html">LCD Display</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 ">
+            <h4 class="text-uppercase text-left  footCol">Articles</h4>
+            <ul class="list-unstyled text-left">
+              <li><a href="../../html/Articles/Penetration Testing.html">Penetration Testing</a></li>
+              <li><a href="../../html/Articles/Phishing Security.html">Phishing Security</a></li>
+              <li><div style="color: #337ab7;">Coming Soon!</div></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4 class="text-uppercase text-left  footCol">Language Guides</h4>
+            <ul class="list-unstyled text-left">
+              <li><a href="../../html/Languages/C/intro/historyofc.html">C</a></li>
+              <li><a href="../../html/Languages/C++/intro/HistoryofC++.html">C++</a></li>
+              <li><div style="color: #337ab7;">Java(Coming Soon!)</div></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" id="footerLinksTxt">
+          <div class="col-md-7" id="footerLinksTxt">
+            <p class="footer-text">Share your thoughts, and leave a Like</p>
+          </div>
+          <div class="col-md-5" id="footerLinks">
+            <p class="text-left">
+              <a
+                href="https://facebook.com/"
+                class="social-round-icon orange-round-icon fa-icon"
+                title=""
+              >
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://twitter.com/"
+                class="social-round-icon orange-round-icon fa-icon"
+                title=""
+              >
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                class="social-round-icon orange-round-icon fa-icon"
+                title=""
+              >
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright text-center" id="cpyrgt">
+        © 2020 Copyright:
+        <a href="../../html/Dynamo Core.html"> Dynamo Core.com</a>
+      </div>
+    </footer>
+    <!--Footer-->
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
