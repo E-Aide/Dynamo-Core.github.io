@@ -15,6 +15,7 @@ con.connect(function(err) {
 	try{
 		if (err) throw err;
 	    console.log("Connected!");}
+		
 	catch(error)
 	{console.log(err);}
 	
