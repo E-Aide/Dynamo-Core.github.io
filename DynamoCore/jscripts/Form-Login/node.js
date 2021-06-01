@@ -18,6 +18,19 @@ con.connect(function(err) {
 	catch(error)
 	{console.log(err);}
 	
-	
+	});
+
+function SignUP(){
+	var userName= document.getElementById('username').value;
+	var password= document.getElementById('pass').value;
+	var Email= document.getElementById('email').value;
+	var contactNo= document.getElementById('contactNo').value;
+	//var profileImg= document.getElementById('username').value;
+
+	var sql = "INSERT INTO userInfo (username, email, passwd, contactno, profileImg, accType) VALUES ("+ userName+","+Email+","+password+","+contactNo+ ")";
+    con.query(sql, function (err, result) {
+    if (err) throw err;
+    console.log("1 record inserted");
   });
 
+}
