@@ -3,6 +3,10 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  top: 0px !important;
+}
+
 .navbar-default {
   border-color: #777 !important;
   z-index: 1 !important;
@@ -135,7 +139,7 @@ h3 {
 }
 
 .navbar-left {
-  background-image: url("../img/icon/Colorful\ Glowing\ Background\ Vector.jpg");
+  background-image: url("../../img/icon/navBack.jpg");
   background-position-x: 0px;
   background-size: cover;
   border-radius: 10px;
@@ -145,6 +149,8 @@ h3 {
   animation-timing-function: linear;
   animation-direction: alternate-reverse;
   transform: translateY(30px);
+  margin-block-start: revert;
+  margin-top: 20px;
 }
 
 @keyframes navLeft {
@@ -169,7 +175,7 @@ h3 {
   }
 }
 
-.sideLeft > li > a {
+.sideLeft>li>a {
   mix-blend-mode: luminosity !important;
   color: rgb(0, 0, 0) !important;
   font-family: "Josefin Sans", sans-serif !important;
@@ -177,11 +183,11 @@ h3 {
   font-size: 14px;
 }
 
-.nav > li > a:hover {
+.nav>li>a:hover {
   border-radius: 10px;
 }
 
-.nav > li > .vline {
+.nav>li>.vline {
   border-radius: 10px;
   text-shadow: -9px 4px 11px #000000;
 }
@@ -195,10 +201,15 @@ h3 {
   color: #4fbe0f;
 }
 
-.cont > ol > li {
+.cont>ol>li {
   padding: 10px;
 }
 
 .langGuideMain {
   padding-left: 48px;
+}
+
+.modal-content.container {
+  box-shadow: 6px 12px 15px 2px rgb(2 0 0 / 88%);
+  margin-block-start: inherit;
 }
