@@ -1,5 +1,6 @@
 {
     "html.format.wrapAttributes": "force-aligned",
     "html.format.endWithNewline": true,
-    "html.format.indentInnerHtml": true
+    "html.format.indentInnerHtml": true,
+    "compile-hero.disable-compile-files-on-did-save-code": false
 }
