@@ -89,7 +89,9 @@
         <!-- horizontal navbar -->
         <!-- horizontal navbar -->
 
-        <ul class="nav navbar-left flex-column sideLeft">
+
+        <ul class="nav navbar-left flex-column sideLeft"
+            style="background-image: url(../../../../img/icon/navBack.jpg);">
             <li><a href="../../../../html/Languages/C++/intro/historyOfC++.html">History Of C++</a></li>
             <li><a href="../../../../html/Languages/C++/intro/intro.html">Features</a></li>
             <li><a href="../../../../html/Languages/C++/intro/variable.html">Variable</a></li>
@@ -131,7 +133,8 @@
                 the type of arguments required by a function is important.
             <pre><b>Examples:</b> 
         int toupper(int);
-        double pow(double, double);</pre></p>
+        double pow(double, double);</pre>
+            </p>
         </div>
         <div class="code">
             <pre><b>simple program</b>
@@ -163,10 +166,12 @@
         </div>
         <h2 id="Function Calls">Function Calls</h2>
         <div class="cont">
-            <p>A function call is an expression of the same type as the function and whose value corresponds to the return value. The return value is commonly passed to a suitable variable.
+            <p>A function call is an expression of the same type as the function and whose value corresponds to the
+                return value. The return value is commonly passed to a suitable variable.
             <pre><b>Example:</b>
         y = pow( x, 3.0); 
-        cout << 2.0 + pow( 5.0, x);  </pre></p>
+        cout << 2.0 + pow( 5.0, x);  </pre>
+            </p>
         </div>
         <div class="code">
             <pre><b>simple program</b>
@@ -201,7 +206,8 @@
                 which are also referred to as procedures in other programming languages.
             <pre><b>Example:</b>
         void srand( unsigned int seed );
-            </pre></p>
+            </pre>
+            </p>
         </div>
         <h3 id="Functions without Arguments">Functions without Arguments</h3>
         <div class="cont">
@@ -209,39 +215,56 @@
                 void or the braces following the function name must be left empty.
             <pre><b>Example:</b>
         int rand( void ); <i>// or</i> int rand();
-            </pre></p>
-        </div> 
-        <h2 id="HEADER FILES">HEADER FILES</h2> 
+            </pre>
+            </p>
+        </div>
+        <h2 id="HEADER FILES">HEADER FILES</h2>
         <div class="cont">
-            <p>Header files are text files containing declarations and macros. By using #include directive these declarations and macros can be made available to any other source file,
+            <p>Header files are text files containing declarations and macros. By using #include directive these
+                declarations and macros can be made available to any other source file,
                 even in other header files.<br>Pay attention to the following points when using header files:</p>
-        </div> 
+        </div>
         <div class="unl">
             <ul>
                 <li>header files should generally be included at the start of a program before any
                     other declarations</li>
                 <li>you can only name one header file per #include directive</li>
-                <li>the file name must be enclosed in angled brackets < ... > or double quotes
-                    " ... ".</li>
+                <li>the file name must be enclosed in angled brackets < ...> or double quotes
+                        " ... ".</li>
             </ul>
         </div>
-        <h3 id="STANDARD HEADER FILES">STANDARD HEADER FILES</h3> 
+        <h3 id="STANDARD HEADER FILES">STANDARD HEADER FILES</h3>
         <div class="tbl">
             <table>
                 <tr>
-                    <td>algorithm</td> <td>ios</td> <td>map</td> <td>stack</td>
+                    <td>algorithm</td>
+                    <td>ios</td>
+                    <td>map</td>
+                    <td>stack</td>
                 </tr>
                 <tr>
-                    <td>bitset</td> <td>iosfwd</td> <td>memory</td> <td>stdexcept</td>
+                    <td>bitset</td>
+                    <td>iosfwd</td>
+                    <td>memory</td>
+                    <td>stdexcept</td>
                 </tr>
                 <tr>
-                    <td>complex</td> <td>iostream</td> <td>new</td> <td>streambuf</td>
+                    <td>complex</td>
+                    <td>iostream</td>
+                    <td>new</td>
+                    <td>streambuf</td>
                 </tr>
                 <tr>
-                    <td>dequeue</td> <td>istream</td> <td>numeric</td> <td>string</td>
+                    <td>dequeue</td>
+                    <td>istream</td>
+                    <td>numeric</td>
+                    <td>string</td>
                 </tr>
                 <tr>
-                    <td>exception</td> <td>list</td> <td>set</td> <td>locale</td>
+                    <td>exception</td>
+                    <td>list</td>
+                    <td>set</td>
+                    <td>locale</td>
                 </tr>
             </table>
         </div>
@@ -277,118 +300,120 @@
             <p>An object is a variable of a class type, also referred to as an instance of the class. When an
                 object is created, memory is allocated to the data members and initialized with suitable
                 values.
-                <pre><b>Example:</b>
+            <pre><b>Example:</b>
         string s("I am a string");
-                </pre></p>
+                </pre>
+            </p>
         </div>
         <h3 id="Calling Methods">Calling Methods</h3>
         <div class="cont">
             <p>All the methods defined as public within the corresponding class can be called for an
                 object. In contrast to calling a global function, a method is always called for one particular
                 object. The name of the object precedes the method and is separated from the method by
-                a period.                
-                <pre><b>Example:</b>
+                a period.
+            <pre><b>Example:</b>
         s.length();  <i>// object.method();</i>
-                </pre></p>
+                </pre>
+            </p>
         </div>
         <script src="../../../../jscripts/Loginlogic.js"></script>
-    <!--Footer-->
-    
-    <footer class="footer-content">
-        <div class="jumbotron text-md-left">
-            <span class="ribbonfootz"><span class="ribbonfoot footer-text">Get In Touch!</span></span>
-            <div class="row">
-                <div class="col-md-5">
-                    <img src="../img/icon/DC.png"
-                         alt="footer-img"
-                         id="footer-img" />
-                    <h3 class="footer-text text-left">Dynamo Core:</h3>
-                    <p id="footercontent">
-                        Dynamo Core was made in the hopes to provide a place for the
-                        global community to come together at a place to talk on things
-                        that they like to and want to do. We hope that it becomes a part
-                        of your journey as a place to learn and share and its you who can
-                        make this community grow.
-                    </p>
-                </div>
-    
-                <div class="col-md-2"></div>
-                <div class="col-md-2">
-                    <h4 class="text-uppercase text-left footCol">Articles</h4>
-                    <ul class="list-unstyled text-left">
-                        <li>
-                            <a href="../html/Articles/Penetration
+        <!--Footer-->
+
+        <footer class="footer-content">
+            <div class="jumbotron text-md-left">
+                <span class="ribbonfootz"><span class="ribbonfoot footer-text">Get In Touch!</span></span>
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="../img/icon/DC.png"
+                             alt="footer-img"
+                             id="footer-img" />
+                        <h3 class="footer-text text-left">Dynamo Core:</h3>
+                        <p id="footercontent">
+                            Dynamo Core was made in the hopes to provide a place for the
+                            global community to come together at a place to talk on things
+                            that they like to and want to do. We hope that it becomes a part
+                            of your journey as a place to learn and share and its you who can
+                            make this community grow.
+                        </p>
+                    </div>
+
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <h4 class="text-uppercase text-left footCol">Articles</h4>
+                        <ul class="list-unstyled text-left">
+                            <li>
+                                <a href="../html/Articles/Penetration
                       Testing.html">Penetration Testing</a>
-                        </li>
-                        <li>
-                            <a href="../html/Articles/Phishing
+                            </li>
+                            <li>
+                                <a href="../html/Articles/Phishing
                       Security.html">Phishing Security</a>
-                        </li>
-                        <li>
-                            <div style="color: #337ab7">Coming Soon!</div>
-                        </li>
-                    </ul>
+                            </li>
+                            <li>
+                                <div style="color: #337ab7">Coming Soon!</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h4 class="text-uppercase text-left footCol">Language Guides</h4>
+                        <ul class="list-unstyled text-left">
+                            <li><a href="../html/Languages/C/intro/historyofc.html">C</a></li>
+                            <li>
+                                <a href="../html/Languages/C++/intro/HistoryofC++.html">C++</a>
+                            </li>
+                            <li>
+                                <div style="color: #337ab7">Java(Coming Soon!)</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <h4 class="text-uppercase text-left footCol">Language Guides</h4>
-                    <ul class="list-unstyled text-left">
-                        <li><a href="../html/Languages/C/intro/historyofc.html">C</a></li>
-                        <li>
-                            <a href="../html/Languages/C++/intro/HistoryofC++.html">C++</a>
-                        </li>
-                        <li>
-                            <div style="color: #337ab7">Java(Coming Soon!)</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row"
-                 id="footerLinksTxt">
-                <div class="col-md-7"
+                <div class="row"
                      id="footerLinksTxt">
-                    <p class="footer-text">Share your thoughts, and leave a Like</p>
-                </div>
-                <div class="col-md-5"
-                     id="footerLinks">
-                    <p class="text-left">
-                        <a href="https://facebook.com/"
-                           class="social-round-icon orange-round-icon fa-icon"
-                           title="">
-                            <i class="fa fa-facebook"
-                               aria-hidden="true"></i>
-                        </a>
-                        <a href="https://twitter.com/"
-                           class="social-round-icon orange-round-icon fa-icon"
-                           title="">
-                            <i class="fa fa-twitter"
-                               aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/"
-                           class="social-round-icon orange-round-icon fa-icon"
-                           title="">
-                            <i class="fa fa-linkedin"
-                               aria-hidden="true"></i>
-                        </a>
-                    </p>
+                    <div class="col-md-7"
+                         id="footerLinksTxt">
+                        <p class="footer-text">Share your thoughts, and leave a Like</p>
+                    </div>
+                    <div class="col-md-5"
+                         id="footerLinks">
+                        <p class="text-left">
+                            <a href="https://facebook.com/"
+                               class="social-round-icon orange-round-icon fa-icon"
+                               title="">
+                                <i class="fa fa-facebook"
+                                   aria-hidden="true"></i>
+                            </a>
+                            <a href="https://twitter.com/"
+                               class="social-round-icon orange-round-icon fa-icon"
+                               title="">
+                                <i class="fa fa-twitter"
+                                   aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/"
+                               class="social-round-icon orange-round-icon fa-icon"
+                               title="">
+                                <i class="fa fa-linkedin"
+                                   aria-hidden="true"></i>
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    
-        <div class="footer-copyright text-center"
-             id="cpyrgt">
-            © 2021 Copyright:
-            <a href="../DynamoCore.html"> DynamoCore.com</a>
-        </div>
-    </footer>
-    <!--Footer-->
-    <script>
-        AOS.init();
-    </script>
+
+            <div class="footer-copyright text-center"
+                 id="cpyrgt">
+                © 2021 Copyright:
+                <a href="../DynamoCore.html"> DynamoCore.com</a>
+            </div>
+        </footer>
+        <!--Footer-->
+        <script>
+            AOS.init();
+        </script>
     </body>
-    
-    </html>
-    
-    <!--Pallete 
+
+</html>
+
+<!--Pallete 
           #E7717D
     
       #C2CAD0
@@ -402,4 +427,3 @@
        #464648
             
         -->
-

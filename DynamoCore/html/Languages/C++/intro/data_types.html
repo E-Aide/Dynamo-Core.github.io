@@ -91,7 +91,9 @@
     <!-- horizontal navbar -->
     <!-- horizontal navbar -->
 
-    <ul class="nav navbar-left flex-column sideLeft">
+
+    <ul class="nav navbar-left flex-column sideLeft"
+        style="background-image: url(../../../../img/icon/navBack.jpg);">
       <li><a href="../../../../html/Languages/C++/intro/historyOfC++.html">History Of C++</a></li>
       <li><a href="../../../../html/Languages/C++/intro/intro.html">Features</a></li>
       <li><a href="../../../../html/Languages/C++/intro/variable.html">Variable</a></li>
@@ -116,9 +118,11 @@
 
 
     </ul>
-    <div class="container mainContLang" id="content">
+    <div class="container mainContLang"
+         id="content">
       <div class="modal-content container">
-        <h1 id="DATATYPES" class="hd1">DATA TYPES</h1>
+        <h1 id="DATATYPES"
+            class="hd1">DATA TYPES</h1>
 
         <div class="cont">
           <p>
@@ -311,15 +315,29 @@ int main()
     cout << "Size of wchar_t : " << sizeof(wchar_t) << endl;
     return 0;
 }
-</pre
-          >
+</pre>
         </div>
         <div class="cont">
           <p>
             This example uses <b>endl</b>, which inserts a new-line character
-            after every line and << operator is being used to pass multiple
-            values out to the screen. We are also using <b>sizeof()</b> function
-            to get size of various data types.
+            after every line and << operator
+               is
+               being
+               used
+               to
+               pass
+               multiple
+               values
+               out
+               to
+               the
+               screen.
+               We
+               are
+               also
+               using
+               <b>sizeof()</b> function
+              to get size of various data types.
           </p>
         </div>
         <h3 id="declaration">typedef Declarations</h3>
@@ -375,8 +393,7 @@ int main()
         <div class="code">
           <pre>
 enum color { red, green, blue } c;
-c = blue;</pre
-          >
+c = blue;</pre>
         </div>
         <div class="cont">
           <p>
@@ -418,8 +435,7 @@ c = blue;</pre
 typedef char C;
 typedef unsigned int WORD;
 typedef char * pChar;
-typedef char field [50];</pre
-          >
+typedef char field [50];</pre>
         </div>
         <div class="cont">
           <p>
@@ -434,8 +450,7 @@ typedef char field [50];</pre
 C mychar, anotherchar, *ptc1;
 WORD myword;
 pChar ptc2;
-field name;</pre
-          >
+field name;</pre>
         </div>
         <div class="cont">
           <p>
@@ -468,8 +483,7 @@ member_type3 member_name3;
 .
 .
 } object_names; 
-   </pre
-          >
+   </pre>
         </div>
         <h3 id="anonymous">Anonymous unions</h3>
         <div class="cont">
@@ -491,8 +505,7 @@ union {
 float dollars;
 int yens;
 } price;
-} book;</pre
-          >
+} book;</pre>
         </div>
         <h3 id="anonymousunion">structure with anonymous union</h3>
         <div class="code">
@@ -505,8 +518,7 @@ float dollars;
 int yens;
 };
 } book; 
-   </pre
-          >
+   </pre>
         </div>
         <div class="cont">
           <p>
@@ -520,8 +532,7 @@ int yens;
         <div class="code">
           <pre>
 book.price.dollars
-book.price.yens</pre
-          >
+book.price.yens</pre>
         </div>
         <div class="cont">
           <p>whereas for an object of the second type, it would be:</p>
@@ -529,8 +540,7 @@ book.price.yens</pre
         <div class="code">
           <pre>
 book.dollars
-book.yens</pre
-          >
+book.yens</pre>
         </div>
         <h3 id="enum">Enumerations (enum)</h3>
         <div class="cont">
@@ -548,8 +558,7 @@ value2,
 value3,
 .
 .
-} object_names;</pre
-          >
+} object_names;</pre>
         </div>
         <div class="cont">
           <p>
@@ -559,15 +568,14 @@ value3,
         </div>
         <div class="code">
           <pre>
-enum colors_t {black, blue, green, cyan, red, purple, yellow, white};</pre
-          >
+enum colors_t {black, blue, green, cyan, red, purple, yellow, white};</pre>
         </div>
       </div>
     </div>
-         
- <script src="../../../../jscripts/Loginlogic.js"></script>
+
+    <script src="../../../../jscripts/Loginlogic.js"></script>
     <!--Footer-->
-    
+
     <footer class="footer-content">
       <div class="jumbotron text-md-left">
         <span class="ribbonfootz"><span class="ribbonfoot footer-text">Get In Touch!</span></span>
@@ -585,7 +593,7 @@ enum colors_t {black, blue, green, cyan, red, purple, yellow, white};</pre
               make this community grow.
             </p>
           </div>
-    
+
           <div class="col-md-2"></div>
           <div class="col-md-2">
             <h4 class="text-uppercase text-left footCol">Articles</h4>
@@ -647,7 +655,7 @@ enum colors_t {black, blue, green, cyan, red, purple, yellow, white};</pre
           </div>
         </div>
       </div>
-    
+
       <div class="footer-copyright text-center"
            id="cpyrgt">
         © 2021 Copyright:
@@ -658,11 +666,11 @@ enum colors_t {black, blue, green, cyan, red, purple, yellow, white};</pre
     <script>
       AOS.init();
     </script>
-    </body>
-    
-    </html>
-    
-    <!--Pallete 
+  </body>
+
+</html>
+
+<!--Pallete 
           #E7717D
     
       #C2CAD0
@@ -676,4 +684,3 @@ enum colors_t {black, blue, green, cyan, red, purple, yellow, white};</pre
        #464648
             
         -->
-    

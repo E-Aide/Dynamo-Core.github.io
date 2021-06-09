@@ -91,7 +91,9 @@
     <!-- horizontal navbar -->
     <!-- horizontal navbar -->
 
-    <ul class="nav navbar-left flex-column sideLeft">
+
+    <ul class="nav navbar-left flex-column sideLeft"
+        style="background-image: url(../../../../img/icon/navBack.jpg);">
       <li><a href="../../../../html/Languages/C++/intro/historyOfC++.html">History Of C++</a></li>
       <li><a href="../../../../html/Languages/C++/intro/intro.html">Features</a></li>
       <li><a href="../../../../html/Languages/C++/intro/variable.html">Variable</a></li>
@@ -116,32 +118,36 @@
 
 
     </ul>
-  <div class="container mainContLang ">
-    <div class="modal-content  container" > <h1 class="hd1" id="basicc++">C++</h1 >
+    <div class="container mainContLang ">
+      <div class="modal-content  container">
+        <h1 class="hd1"
+            id="basicc++">C++</h1>
         <div class="cont">
-            <p>When we consider a C++ program, it can be defined as a collection of objects that communicate via invoking each other's methods. Let us now briefly look into what a class,
-                object, methods, and instant variables mean.</p>
+          <p>When we consider a C++ program, it can be defined as a collection of objects that communicate via invoking
+            each other's methods. Let us now briefly look into what a class,
+            object, methods, and instant variables mean.</p>
         </div>
         <div class="unl">
-            <ul>
+          <ul>
             <li><b>Object</b>- Objects have states and behaviors. Example: A dog has states - color, name,
-                breed as well as behaviors - wagging, barking, and eating. An object is an instance of
-                a class.</li>
+              breed as well as behaviors - wagging, barking, and eating. An object is an instance of
+              a class.</li>
             <li><b>Class</b>- A class can be defined as a template/blueprint that describes the
-                behaviors/states that object of its type support.</li>
+              behaviors/states that object of its type support.</li>
             <li><b>Methods</b>- A method is basically a behavior. A class can contain many methods. It is
-                in methods where the logics are written, data is manipulated and all the actions are
-                executed.</li> 
+              in methods where the logics are written, data is manipulated and all the actions are
+              executed.</li>
             <li><b>Instant Variables</b>- Each object has its unique set of instant variables. An object's
-                state is created by the values assigned to these instant variables</li></ul>           
+              state is created by the values assigned to these instant variables</li>
+          </ul>
         </div>
- 
-            <h2 id="progstr">C++ Program Structure</h2>
+
+        <h2 id="progstr">C++ Program Structure</h2>
         <div class="cont">
-            <p>Let us look at a simple code that would print the words <i>Hello World.</i></p>
+          <p>Let us look at a simple code that would print the words <i>Hello World.</i></p>
         </div>
         <div class="code">
-            <pre>
+          <pre>
 #include&lt;iostream&gt;
 using namespace std;
 // main() is where program execution begins.
@@ -153,42 +159,46 @@ int main()
             </pre>
         </div>
         <div class="cont">
-            <p>Let us look at the various parts of the above program:</p>
+          <p>Let us look at the various parts of the above program:</p>
         </div>
         <div class="unl">
-            <ul>
+          <ul>
             <li>The C++ language defines several headers, which contain information that is either
-                necessary or useful to your program. For this program, the header<b><iostream></b> is
-                needed.</li>
+              necessary or useful to your program. For this program, the header<b>
+                <iostream>
+              </b> is
+              needed.</li>
             <li>The line <b>using neamespac std;</b> tells the compiler to use the std namespace.
-                Namespaces are a relatively recent addition to C++.</li> 
+              Namespaces are a relatively recent addition to C++.</li>
             <li>. The next line ‘<b>// main() is where program execution begins.</b>’ is a single-line
-                comment available in C++. Single-line comments begin with // and stop at the end of
-                the line.</li>  
-            <li>The line <b>int main()</b> is the main function where program execution begins.</li> 
-            <li>The next line <b>cout << "This is my first C++ program.";</b> causes the message "This
-                is my first C++ program" to be displayed on the screen.</li>
+              comment available in C++. Single-line comments begin with // and stop at the end of
+              the line.</li>
+            <li>The line <b>int main()</b> is the main function where program execution begins.</li>
+            <li>The next line <b>cout << "This is my first C++ program." ;</b> causes the message "This
+                  is my first C++ program" to be displayed on the screen.</li>
             <li>The next line <b>return 0;</b> terminates main() function and causes it to return the value 0
-                to the calling process.</li>  </ul>  
+              to the calling process.</li>
+          </ul>
         </div>
         <h2 id="compile">Compile & Execute C++ Program</h2>
         <div class="cont">
-            <p>Let's look at how to save the file, compile and run the program. Please follow the steps given
-                below:</p>
-            <div class="unl">
+          <p>Let's look at how to save the file, compile and run the program. Please follow the steps given
+            below:</p>
+          <div class="unl">
             <ul>
-            <li>Open a text editor and add the code as above.</li>
-            <li>Save the file as: hello.cpp</li>
-            <li>Open a command prompt and go to the directory where you saved the file.</li>
-            <li>Type 'g++ hello.cpp' and press enter to compile your code. If there are no errors in
+              <li>Open a text editor and add the code as above.</li>
+              <li>Save the file as: hello.cpp</li>
+              <li>Open a command prompt and go to the directory where you saved the file.</li>
+              <li>Type 'g++ hello.cpp' and press enter to compile your code. If there are no errors in
                 your code the command prompt will take you to the next line and would generate a.out
                 executable file.</li>
-            <li>Now, type 'a.out' to run your program.</li>
-                <li>You will be able to see ' Hello World ' printed on the window</li></ul>
-            </div> 
+              <li>Now, type 'a.out' to run your program.</li>
+              <li>You will be able to see ' Hello World ' printed on the window</li>
+            </ul>
+          </div>
         </div>
         <div class="code">
-            <pre>
+          <pre>
 $ g++ hello.cpp
 $ ./a.out
 Hello World                
@@ -196,142 +206,238 @@ Hello World
         </div>
         <h2 id="blocks">Semicolons & Blocks in C++</h2>
         <div class="cont">
-            <p>In C++, the semicolon is a statement terminator. That is, each individual statement must be
-                ended with a semicolon. It indicates the end of one logical entity.<br>For example, following are three different statements:</p>
-<div class="code">
-<pre>
+          <p>In C++, the semicolon is a statement terminator. That is, each individual statement must be
+            ended with a semicolon. It indicates the end of one logical entity.<br>For example, following are three
+            different statements:</p>
+          <div class="code">
+            <pre>
 x = y;
 y = y+1;
 add(x, y);    
-</pre></div>
-A block is a set of logically connected statements that are surrounded by opening and closing
-braces. For example:
-<div class="code">
-<pre>
+</pre>
+          </div>
+          A block is a set of logically connected statements that are surrounded by opening and closing
+          braces. For example:
+          <div class="code">
+            <pre>
 {
     cout << "Hello World"; // prints Hello World
     return 0;
 }
-</pre></div>C++ does not recognize the end of the line as a terminator. For this reason, it does not matter
-where you put a statement in a line. For example:
-<div class="code">
-<pre>
+</pre>
+          </div>C++ does not recognize the end of the line as a terminator. For this reason, it does not matter
+          where you put a statement in a line. For example:
+          <div class="code">
+            <pre>
 x = y;
 y = y+1;
 add(x, y);    
-</pre></div>
-is the same as
-<div class="code">
- <pre>
+</pre>
+          </div>
+          is the same as
+          <div class="code">
+            <pre>
 x = y; y = y+1; add(x, y);
 </pre>
-</div>
+          </div>
 
         </div>
         <h2 id="C++ Identifiers">C++ Identifiers</h2>
         <div class="cont">
-         <p>A C++ identifier is a name used to identify a variable, function, class, module, or any other
+          <p>A C++ identifier is a name used to identify a variable, function, class, module, or any other
             user-defined item. An identifier starts with a letter A to Z or a to z or an underscore (_)
             followed by zero or more letters, underscores, and digits (0 to 9).</p>
-            Here are some examples of acceptable identifiers:
-<pre>
+          Here are some examples of acceptable identifiers:
+          <pre>
 mohd      zara  abc move_name  a_123
 myname50  _temp j   a23b9      retVal
 </pre>
         </div>
         <h2 id="C++Keywords">C++ Keywords</h2>
         <div class="cont">
-            <p>The following list shows the reserved words in C++. These reserved words may not be used
-                as constant or variable or any other identifier names.</p>
+          <p>The following list shows the reserved words in C++. These reserved words may not be used
+            as constant or variable or any other identifier names.</p>
 
-<table class="tbl">
-<tr><td>asm</td><td>else</td><td>new</td><td>this</td></tr>
-<tr><td>auto</td><td>enum</td><td>operator</td><td>throw</td></tr>
-<tr><td>bool</td><td>explicit</td><td>private</td><td>true</td></tr>
-<tr><td>break</td><td>export</td><td>protected</td><td>try</td></tr>
-<tr><td>case</td><td>extern</td><td>public</td><td>typedef</td></tr>
-<tr><td>catch</td><td>false</td><td>register</td><td>typeid</td></tr>
-<tr><td>char</td><td>float</td><td>reinterpret_cast</td><td>typename</td></tr>
-<tr><td>Class</td><td>for</td><td>return</td><td>union</td></tr>
-<tr><td>const</td><td>friend</td><td>short</td><td>unsigned</td></tr>
-<tr><td>const_cast</td><td>goto</td><td>signed</td><td>using</td></tr>
-<tr><td>continue</td><td>if</td><td>sizeof</td><td>virtual</td></tr>
-<tr><td>default</td><td>inline</td><td>static</td><td>void</td></tr>
-<tr><td>delete</td><td>int</td><td>static_cast</td><td>volatile</td></tr>
-<tr><td>do</td><td>long</td><td>struct</td><td>wchar_t</td></tr>
-<tr><td>double</td><td>mutable</td><td>switch</td><td>while</td></tr>
-<tr><td>dynamic_cast</td><td>namespace</td><td>template</td></tr>
-</table>
+          <table class="tbl">
+            <tr>
+              <td>asm</td>
+              <td>else</td>
+              <td>new</td>
+              <td>this</td>
+            </tr>
+            <tr>
+              <td>auto</td>
+              <td>enum</td>
+              <td>operator</td>
+              <td>throw</td>
+            </tr>
+            <tr>
+              <td>bool</td>
+              <td>explicit</td>
+              <td>private</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>break</td>
+              <td>export</td>
+              <td>protected</td>
+              <td>try</td>
+            </tr>
+            <tr>
+              <td>case</td>
+              <td>extern</td>
+              <td>public</td>
+              <td>typedef</td>
+            </tr>
+            <tr>
+              <td>catch</td>
+              <td>false</td>
+              <td>register</td>
+              <td>typeid</td>
+            </tr>
+            <tr>
+              <td>char</td>
+              <td>float</td>
+              <td>reinterpret_cast</td>
+              <td>typename</td>
+            </tr>
+            <tr>
+              <td>Class</td>
+              <td>for</td>
+              <td>return</td>
+              <td>union</td>
+            </tr>
+            <tr>
+              <td>const</td>
+              <td>friend</td>
+              <td>short</td>
+              <td>unsigned</td>
+            </tr>
+            <tr>
+              <td>const_cast</td>
+              <td>goto</td>
+              <td>signed</td>
+              <td>using</td>
+            </tr>
+            <tr>
+              <td>continue</td>
+              <td>if</td>
+              <td>sizeof</td>
+              <td>virtual</td>
+            </tr>
+            <tr>
+              <td>default</td>
+              <td>inline</td>
+              <td>static</td>
+              <td>void</td>
+            </tr>
+            <tr>
+              <td>delete</td>
+              <td>int</td>
+              <td>static_cast</td>
+              <td>volatile</td>
+            </tr>
+            <tr>
+              <td>do</td>
+              <td>long</td>
+              <td>struct</td>
+              <td>wchar_t</td>
+            </tr>
+            <tr>
+              <td>double</td>
+              <td>mutable</td>
+              <td>switch</td>
+              <td>while</td>
+            </tr>
+            <tr>
+              <td>dynamic_cast</td>
+              <td>namespace</td>
+              <td>template</td>
+            </tr>
+          </table>
         </div>
         <h2 id="Trigraphs">Trigraphs</h2>
         <div class="cont">
-            <p>A few characters have an alternative representation, called a trigraph sequence. A trigraph is
-                a three-character sequence that represents a single character and the sequence always starts
-                with two question marks.</p>
-            <p>Trigraphs are expanded anywhere they appear, including within string literals and character literals, in comments, 
-                and in preprocessor directives.</p>
+          <p>A few characters have an alternative representation, called a trigraph sequence. A trigraph is
+            a three-character sequence that represents a single character and the sequence always starts
+            with two question marks.</p>
+          <p>Trigraphs are expanded anywhere they appear, including within string literals and character literals, in
+            comments,
+            and in preprocessor directives.</p>
         </div>
         <div class="tbl">
-            <table>
-                <tr>
-                    <td><b>Trigraph</b></td> <td><b>Replacement</b></td>
-                </tr> 
-                <tr>
-                    <td>??=</td> <td>#</td>
-                </tr>
-                <tr>
-                    <td>??/</td> <td>\</td>
-                </tr>
-                <tr>
-                    <td>??'</td> <td>^</td>
-                </tr>
-                <tr>
-                    <td>??(</td> <td>[</td>
-                </tr>
-                <tr>
-                    <td>??)</td> <td>]</td>
-                </tr>
-                <tr>
-                    <td>??!</td> <td>|</td>
-                </tr>
-                <tr>
-                    <td>??< </td> <td>{</td>
-                </tr>
-                <tr>
-                    <td>??> </td> <td>}</td>
-                </tr>
-                <tr>
-                    <td>??-</td> <td>~</td>
-                </tr>
-            </table>
+          <table>
+            <tr>
+              <td><b>Trigraph</b></td>
+              <td><b>Replacement</b></td>
+            </tr>
+            <tr>
+              <td>??=</td>
+              <td>#</td>
+            </tr>
+            <tr>
+              <td>??/</td>
+              <td>\</td>
+            </tr>
+            <tr>
+              <td>??'</td>
+              <td>^</td>
+            </tr>
+            <tr>
+              <td>??(</td>
+              <td>[</td>
+            </tr>
+            <tr>
+              <td>??)</td>
+              <td>]</td>
+            </tr>
+            <tr>
+              <td>??!</td>
+              <td>|</td>
+            </tr>
+            <tr>
+              <td>??< </td>
+              <td>{</td>
+            </tr>
+            <tr>
+              <td>??> </td>
+              <td>}</td>
+            </tr>
+            <tr>
+              <td>??-</td>
+              <td>~</td>
+            </tr>
+          </table>
         </div>
         <h2 id="Whitespace in C++">Whitespace in C++</h2>
         <div class="cont">
-         <p>A line containing only whitespace, possibly with a comment, is known as a blank line, and
-            C++ compiler totally ignores it.<br>Whitespace is the term used in C++ to describe blanks, tabs, newline characters and
-            comments. Whitespace separates one part of a statement from another and enables the compiler to identify where one element in a statement, such as int, ends and the next element
+          <p>A line containing only whitespace, possibly with a comment, is known as a blank line, and
+            C++ compiler totally ignores it.<br>Whitespace is the term used in C++ to describe blanks, tabs, newline
+            characters and
+            comments. Whitespace separates one part of a statement from another and enables the compiler to identify
+            where one element in a statement, such as int, ends and the next element
             begins. Statement 1:
-<pre>
+          <pre>
 int age;
 </pre>In the above statement there must be at least one whitespace character (usually a space)
-between int and age for the compiler to be able to distinguish them. Statement 2:
-<pre>
+          between int and age for the compiler to be able to distinguish them. Statement 2:
+          <pre>
 fruit = apples + oranges; <i>// Get the total fruit</i>
 </pre><br> In the above statement 2, no whitespace characters are necessary between fruit and =, or
-between = and apples, although you are free to include some if you wish for readability
-purpose.</p>   
+          between = and apples, although you are free to include some if you wish for readability
+          purpose.</p>
         </div>
         <h2 id="comments">Comments In C++</h2>
         <div class="cont">
-        <p>C++ supports single-line and multi-line comments. All characters available inside any
+          <p>C++ supports single-line and multi-line comments. All characters available inside any
             comment are ignored by C++ compiler.<br>C++ comments start with /* and end with */. For example:
-<pre>
+          <pre>
 /* This is a comment */
 /* C++ comments can also
 * span multiple lines
 */    
 </pre>A comment can also start with //, extending to the end of the line. For example:
-<pre>
+          <pre>
 #include &lt;iostream&gt;
 using namespace std;
 main()
@@ -340,24 +446,25 @@ main()
     return 0;
 }
 </pre>When the above code is compiled, it will ignore<b> // prints Hello World</b> and final executable
-will produce the following result:
-<pre>
+          will produce the following result:
+          <pre>
 Hello World
 </pre>Within a /* and */ comment, // characters have no special meaning. Within a // comment, /*
-and */ have no special meaning. Thus, you can "nest" one kind of comment within the other
-kind. For example:
-<pre>
+          and */ have no special meaning. Thus, you can "nest" one kind of comment within the other
+          kind. For example:
+          <pre>
 /* Comment out printing of Hello World:
 cout << "Hello World"; // prints Hello World
 */
-</pre>      </p>   
+</pre>
+          </p>
         </div>
-        </div>
-        </div>
-        
-   <script src="../../../../jscripts/Loginlogic.js"></script>
+      </div>
+    </div>
+
+    <script src="../../../../jscripts/Loginlogic.js"></script>
     <!--Footer-->
-    
+
     <footer class="footer-content">
       <div class="jumbotron text-md-left">
         <span class="ribbonfootz"><span class="ribbonfoot footer-text">Get In Touch!</span></span>
@@ -375,7 +482,7 @@ cout << "Hello World"; // prints Hello World
               make this community grow.
             </p>
           </div>
-    
+
           <div class="col-md-2"></div>
           <div class="col-md-2">
             <h4 class="text-uppercase text-left footCol">Articles</h4>
@@ -437,7 +544,7 @@ cout << "Hello World"; // prints Hello World
           </div>
         </div>
       </div>
-    
+
       <div class="footer-copyright text-center"
            id="cpyrgt">
         © 2021 Copyright:
@@ -448,11 +555,11 @@ cout << "Hello World"; // prints Hello World
     <script>
       AOS.init();
     </script>
-    </body>
-    
-    </html>
-    
-    <!--Pallete 
+  </body>
+
+</html>
+
+<!--Pallete 
           #E7717D
     
       #C2CAD0
@@ -466,4 +573,3 @@ cout << "Hello World"; // prints Hello World
        #464648
             
         -->
-    

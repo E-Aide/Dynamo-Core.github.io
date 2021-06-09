@@ -91,7 +91,9 @@
     <!-- horizontal navbar -->
     <!-- horizontal navbar -->
 
-    <ul class="nav navbar-left flex-column sideLeft">
+
+    <ul class="nav navbar-left flex-column sideLeft"
+        style="background-image: url(../../../../img/icon/navBack.jpg);">
       <li><a href="../../../../html/Languages/C++/intro/historyOfC++.html">History Of C++</a></li>
       <li><a href="../../../../html/Languages/C++/intro/intro.html">Features</a></li>
       <li><a href="../../../../html/Languages/C++/intro/variable.html">Variable</a></li>
@@ -116,21 +118,25 @@
 
 
     </ul>
-  
-  <div class="container mainContLang ">
-    <div class="modal-content  container" ><h1 id="friend">Friend functions </h1>
-        
+
+    <div class="container mainContLang ">
+      <div class="modal-content  container">
+        <h1 id="friend">Friend functions </h1>
+
         <div class="cont">
-            <p>In principle, private and protected members of a class cannot be accessed from outside the same class in which
-                they are declared. However, this rule does not affect friends.<br>
-                Friends are functions or classes declared as such.<br>
-                If we want to declare an external function as friend of a class, thus allowing this function to have access to the
-                private and protected members of this class, we do it by declaring a prototype of this external function within the
-                class, and preceding it with the keyword friend: 
-            </p>
+          <p>In principle, private and protected members of a class cannot be accessed from outside the same class in
+            which
+            they are declared. However, this rule does not affect friends.<br>
+            Friends are functions or classes declared as such.<br>
+            If we want to declare an external function as friend of a class, thus allowing this function to have access
+            to the
+            private and protected members of this class, we do it by declaring a prototype of this external function
+            within the
+            class, and preceding it with the keyword friend:
+          </p>
         </div>
         <div class="code">
-<pre><i>// friend functions</i>
+          <pre><i>// friend functions</i>
 #include &lt;iostream&gt;
 using namespace std;
 class CRectangle {
@@ -160,20 +166,21 @@ int main () {
 }</pre>
         </div>
         <div class="cont">
-            <p>output:
-            </p>
+          <p>output:
+          </p>
         </div>
         <div class="code">
-            <pre>24</pre>
+          <pre>24</pre>
         </div>
         <h3 id="friendcl">Friend classes </h3>
         <div class="cont">
-            <p>Just as we have the possibility to define a friend function, we can also define a class as friend of another one,
-                granting that first class access to the protected and private members of the second one.
-            </p>
+          <p>Just as we have the possibility to define a friend function, we can also define a class as friend of
+            another one,
+            granting that first class access to the protected and private members of the second one.
+          </p>
         </div>
         <div class="code">
-<pre><i>// friend class</i>
+          <pre><i>// friend class</i>
 #include &lt;iostream&gt;
 using namespace std;
 class CSquare;
@@ -206,37 +213,42 @@ int main () {
 }</pre>
         </div>
         <div class="cont">
-            <p>output:
-            </p>
+          <p>output:
+          </p>
         </div>
         <div class="code">
-            <pre>16</pre>
+          <pre>16</pre>
         </div>
         <div class="cont">
-            <p>In this example, we have declared <em>CRectangle</em> as a friend of <em>CSquare</em> so that <em>CRectangle</em> member functions could
-                have access to the protected and private members of <em>CSquare</em>, more concretely to <em>CSquare::side</em>, which describes
-                the side width of the square. 
-            </p>
+          <p>In this example, we have declared <em>CRectangle</em> as a friend of <em>CSquare</em> so that
+            <em>CRectangle</em> member functions could
+            have access to the protected and private members of <em>CSquare</em>, more concretely to
+            <em>CSquare::side</em>, which describes
+            the side width of the square.
+          </p>
         </div>
         <h3 id="inhebwclass">Inheritance between classes </h3>
         <div class="cont">
-            <p>o derive a class from another, we use a colon (:) in the declaration of the derived class using the
-                following format:
-            </p>
+          <p>o derive a class from another, we use a colon (:) in the declaration of the derived class using the
+            following format:
+          </p>
         </div>
         <div class="code">
-<pre>class derived_class_name: public base_class_name
+          <pre>class derived_class_name: public base_class_name
 { /*...*/ };</pre>
         </div>
         <div class="cont">
-            <p>Where <em>derived_class_name</em> is the name of the derived class and <em>base_class_name</em> is the name of the class on
-                which it is based. The public access specifier may be replaced by any one of the other access specifiers protected
-                and private. This access specifier describes the minimum access level for the members that are inherited from the
-                base class.
-            </p>
+          <p>Where <em>derived_class_name</em> is the name of the derived class and <em>base_class_name</em> is the name
+            of the class on
+            which it is based. The public access specifier may be replaced by any one of the other access specifiers
+            protected
+            and private. This access specifier describes the minimum access level for the members that are inherited
+            from the
+            base class.
+          </p>
         </div>
         <div class="code">
-<pre><i>// derived classes</i>
+          <pre><i>// derived classes</i>
 #include &lt;iostream&gt;
 using namespace std;
 class CPolygon {
@@ -269,33 +281,35 @@ int main () {
         </div>
         <h3 id="base">What is inherited from the base class? </h3>
         <div class="cont">
-            <p>In principle, a derived class inherits every member of a base class except:
-            </p>
+          <p>In principle, a derived class inherits every member of a base class except:
+          </p>
         </div>
         <div class="unl">
-            <ul>
-                <li>its constructor and its destructor</li>
-                <li>its operator=() members</li>
-                <lI>its friends</lI>
-            </ul>
+          <ul>
+            <li>its constructor and its destructor</li>
+            <li>its operator=() members</li>
+            <lI>its friends</lI>
+          </ul>
         </div>
         <div class="cont">
-            <p>Although the constructors and destructors of the base class are not inherited themselves, its default constructor
-                (i.e., its constructor with no parameters) and its destructor are always called when a new object of a derived class
-                is created or destroyed.<br>
-                If the base class has no default constructor or you want that an overloaded constructor is called when a new
-                derived object is created, you can specify it in each constructor definition of the derived class:      
-            </p>
+          <p>Although the constructors and destructors of the base class are not inherited themselves, its default
+            constructor
+            (i.e., its constructor with no parameters) and its destructor are always called when a new object of a
+            derived class
+            is created or destroyed.<br>
+            If the base class has no default constructor or you want that an overloaded constructor is called when a new
+            derived object is created, you can specify it in each constructor definition of the derived class:
+          </p>
         </div>
         <div class="code">
-            <pre>derived_constructor_name (parameters) : base_constructor_name (parameters) {...}</pre>
+          <pre>derived_constructor_name (parameters) : base_constructor_name (parameters) {...}</pre>
         </div>
         <div class="cont">
-            <p>For example:
-            </p>
+          <p>For example:
+          </p>
         </div>
         <div class="code">
-<pre><i>// constructors and derived classes</i>
+          <pre><i>// constructors and derived classes</i>
 #include &lt;iostream&gt;
 using namespace std;
 class mother {
@@ -324,11 +338,11 @@ int main () {
 </pre>
         </div>
         <div class="cont">
-            <p>output:
-            </p>
+          <p>output:
+          </p>
         </div>
         <div class="code">
-<pre>mother: no parameters
+          <pre>mother: no parameters
 daughter: int parameter
     
 mother: int parameter
@@ -336,12 +350,13 @@ son: int parameter </pre>
         </div>
         <h3 id="multiple">Multiple inheritance </h3>
         <div class="cont">
-            <p>In C++ it is perfectly possible that a class inherits members from more than one class. This is done by simply
-                separating the different base classes with commas in the derived class declaration.<br>example:
-            </p>
+          <p>In C++ it is perfectly possible that a class inherits members from more than one class. This is done by
+            simply
+            separating the different base classes with commas in the derived class declaration.<br>example:
+          </p>
         </div>
         <div class="code">
-<pre><i>// multiple inheritance</i>
+          <pre><i>// multiple inheritance</i>
 #include &lt;iostream&gt;
 using namespace std;
 class CPolygon {
@@ -380,113 +395,113 @@ int main () {
 }</pre>
         </div>
         <div class="cont">
-            <p>output:
-            </p>
+          <p>output:
+          </p>
         </div>
         <div class="code">
-<pre>20
+          <pre>20
 10
 </pre>
         </div>
-            
-   <script src="../../../../jscripts/Loginlogic.js"></script>
-    <!--Footer-->
-    
-    <footer class="footer-content">
-      <div class="jumbotron text-md-left">
-        <span class="ribbonfootz"><span class="ribbonfoot footer-text">Get In Touch!</span></span>
-        <div class="row">
-          <div class="col-md-5">
-            <img src="../img/icon/DC.png"
-                 alt="footer-img"
-                 id="footer-img" />
-            <h3 class="footer-text text-left">Dynamo Core:</h3>
-            <p id="footercontent">
-              Dynamo Core was made in the hopes to provide a place for the
-              global community to come together at a place to talk on things
-              that they like to and want to do. We hope that it becomes a part
-              of your journey as a place to learn and share and its you who can
-              make this community grow.
-            </p>
-          </div>
-    
-          <div class="col-md-2"></div>
-          <div class="col-md-2">
-            <h4 class="text-uppercase text-left footCol">Articles</h4>
-            <ul class="list-unstyled text-left">
-              <li>
-                <a href="../html/Articles/Penetration
+
+        <script src="../../../../jscripts/Loginlogic.js"></script>
+        <!--Footer-->
+
+        <footer class="footer-content">
+          <div class="jumbotron text-md-left">
+            <span class="ribbonfootz"><span class="ribbonfoot footer-text">Get In Touch!</span></span>
+            <div class="row">
+              <div class="col-md-5">
+                <img src="../img/icon/DC.png"
+                     alt="footer-img"
+                     id="footer-img" />
+                <h3 class="footer-text text-left">Dynamo Core:</h3>
+                <p id="footercontent">
+                  Dynamo Core was made in the hopes to provide a place for the
+                  global community to come together at a place to talk on things
+                  that they like to and want to do. We hope that it becomes a part
+                  of your journey as a place to learn and share and its you who can
+                  make this community grow.
+                </p>
+              </div>
+
+              <div class="col-md-2"></div>
+              <div class="col-md-2">
+                <h4 class="text-uppercase text-left footCol">Articles</h4>
+                <ul class="list-unstyled text-left">
+                  <li>
+                    <a href="../html/Articles/Penetration
                       Testing.html">Penetration Testing</a>
-              </li>
-              <li>
-                <a href="../html/Articles/Phishing
+                  </li>
+                  <li>
+                    <a href="../html/Articles/Phishing
                       Security.html">Phishing Security</a>
-              </li>
-              <li>
-                <div style="color: #337ab7">Coming Soon!</div>
-              </li>
-            </ul>
+                  </li>
+                  <li>
+                    <div style="color: #337ab7">Coming Soon!</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <h4 class="text-uppercase text-left footCol">Language Guides</h4>
+                <ul class="list-unstyled text-left">
+                  <li><a href="../html/Languages/C/intro/historyofc.html">C</a></li>
+                  <li>
+                    <a href="../html/Languages/C++/intro/HistoryofC++.html">C++</a>
+                  </li>
+                  <li>
+                    <div style="color: #337ab7">Java(Coming Soon!)</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row"
+                 id="footerLinksTxt">
+              <div class="col-md-7"
+                   id="footerLinksTxt">
+                <p class="footer-text">Share your thoughts, and leave a Like</p>
+              </div>
+              <div class="col-md-5"
+                   id="footerLinks">
+                <p class="text-left">
+                  <a href="https://facebook.com/"
+                     class="social-round-icon orange-round-icon fa-icon"
+                     title="">
+                    <i class="fa fa-facebook"
+                       aria-hidden="true"></i>
+                  </a>
+                  <a href="https://twitter.com/"
+                     class="social-round-icon orange-round-icon fa-icon"
+                     title="">
+                    <i class="fa fa-twitter"
+                       aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/"
+                     class="social-round-icon orange-round-icon fa-icon"
+                     title="">
+                    <i class="fa fa-linkedin"
+                       aria-hidden="true"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-2">
-            <h4 class="text-uppercase text-left footCol">Language Guides</h4>
-            <ul class="list-unstyled text-left">
-              <li><a href="../html/Languages/C/intro/historyofc.html">C</a></li>
-              <li>
-                <a href="../html/Languages/C++/intro/HistoryofC++.html">C++</a>
-              </li>
-              <li>
-                <div style="color: #337ab7">Java(Coming Soon!)</div>
-              </li>
-            </ul>
+
+          <div class="footer-copyright text-center"
+               id="cpyrgt">
+            © 2021 Copyright:
+            <a href="../DynamoCore.html"> DynamoCore.com</a>
           </div>
-        </div>
-        <div class="row"
-             id="footerLinksTxt">
-          <div class="col-md-7"
-               id="footerLinksTxt">
-            <p class="footer-text">Share your thoughts, and leave a Like</p>
-          </div>
-          <div class="col-md-5"
-               id="footerLinks">
-            <p class="text-left">
-              <a href="https://facebook.com/"
-                 class="social-round-icon orange-round-icon fa-icon"
-                 title="">
-                <i class="fa fa-facebook"
-                   aria-hidden="true"></i>
-              </a>
-              <a href="https://twitter.com/"
-                 class="social-round-icon orange-round-icon fa-icon"
-                 title="">
-                <i class="fa fa-twitter"
-                   aria-hidden="true"></i>
-              </a>
-              <a href="https://www.linkedin.com/"
-                 class="social-round-icon orange-round-icon fa-icon"
-                 title="">
-                <i class="fa fa-linkedin"
-                   aria-hidden="true"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    
-      <div class="footer-copyright text-center"
-           id="cpyrgt">
-        © 2021 Copyright:
-        <a href="../DynamoCore.html"> DynamoCore.com</a>
-      </div>
-    </footer>
-    <!--Footer-->
-    <script>
-      AOS.init();
-    </script>
-    </body>
-    
-    </html>
-    
-    <!--Pallete 
+        </footer>
+        <!--Footer-->
+        <script>
+          AOS.init();
+        </script>
+  </body>
+
+</html>
+
+<!--Pallete 
           #E7717D
     
       #C2CAD0
@@ -500,4 +515,3 @@ int main () {
        #464648
             
         -->
-    

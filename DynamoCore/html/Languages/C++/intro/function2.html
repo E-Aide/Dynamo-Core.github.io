@@ -91,7 +91,9 @@
     <!-- horizontal navbar -->
     <!-- horizontal navbar -->
 
-    <ul class="nav navbar-left flex-column sideLeft">
+
+    <ul class="nav navbar-left flex-column sideLeft"
+        style="background-image: url(../../../../img/icon/navBack.jpg);">
       <li><a href="../../../../html/Languages/C++/intro/historyOfC++.html">History Of C++</a></li>
       <li><a href="../../../../html/Languages/C++/intro/intro.html">Features</a></li>
       <li><a href="../../../../html/Languages/C++/intro/variable.html">Variable</a></li>
@@ -116,9 +118,11 @@
 
 
     </ul>
-    <div class="container mainContLang" id="content">
+    <div class="container mainContLang"
+         id="content">
       <div class="modal-content container">
-        <h2 class="hd2" id="dynamicmemory">FUNCTION</h2>
+        <h2 class="hd2"
+            id="dynamicmemory">FUNCTION</h2>
 
         <h3 id="args">Arguments passed by value and by reference.</h3>
         <div class="cont">
@@ -134,16 +138,14 @@
         <div class="code">
           <pre>
 int x=5, y=3, z;
-z = addition ( x , y ); </pre
-          >
+z = addition ( x , y ); </pre>
         </div>
         <div class="cont">
           <p>
             What we did in this case was to call to function addition passing
             the values of x and y, i.e. 5 and 3 respectively, but not the
-            variables x and y themselves. <br /><b
-              >int addition(int a,int b)<br />z=addition(5,3);<br /> </b
-            >This way, when the function addition is called, the value of its
+            variables x and y themselves. <br /><b>int addition(int a,int b)<br />z=addition(5,3);<br /> </b>This way,
+            when the function addition is called, the value of its
             local variables a and b become 5 and 3 respectively, but any
             modification to either a or b within the function addition will not
             have any effect in the values of x and y outside it, because
@@ -189,9 +191,8 @@ int main ()
             passing a copy of its value, but we are somehow passing the variable
             itself to the function and any modification that we do to the local
             variables will have an effect in their counterpart variables passed
-            as arguments in the call to the function. <br /><b
-              >void duplicate(int& a,int& b,int& c)<br />duplicate(x,y,z);</b
-            ><br />To explain it in another way, we associate a, b and c with
+            as arguments in the call to the function. <br /><b>void duplicate(int& a,int& b,int&
+              c)<br />duplicate(x,y,z);</b><br />To explain it in another way, we associate a, b and c with
             the arguments passed on the function call (x, y and z) and any
             change that we do on a within the function will affect the value of
             x outside it. Any change that we do on b will affect y, and the same
@@ -284,8 +285,7 @@ int main ()
           <pre>
 6
 5
-</pre
-          >
+</pre>
         </div>
         <h3 id="overload">Overloaded functions.</h3>
         <div class="cont">
@@ -327,8 +327,7 @@ int main ()
           <pre>
 10
 2.5
-</pre
-          >
+</pre>
         </div>
         <h3 id="inline">inline functions.</h3>
         <div class="cont">
@@ -346,15 +345,14 @@ int main ()
         <div class="code">
           <pre>
 inline type name ( arguments ... ) { instructions ... }
-            </pre
-          >
+            </pre>
         </div>
       </div>
     </div>
-           
- <script src="../../../../jscripts/Loginlogic.js"></script>
+
+    <script src="../../../../jscripts/Loginlogic.js"></script>
     <!--Footer-->
-    
+
     <footer class="footer-content">
       <div class="jumbotron text-md-left">
         <span class="ribbonfootz"><span class="ribbonfoot footer-text">Get In Touch!</span></span>
@@ -372,7 +370,7 @@ inline type name ( arguments ... ) { instructions ... }
               make this community grow.
             </p>
           </div>
-    
+
           <div class="col-md-2"></div>
           <div class="col-md-2">
             <h4 class="text-uppercase text-left footCol">Articles</h4>
@@ -434,7 +432,7 @@ inline type name ( arguments ... ) { instructions ... }
           </div>
         </div>
       </div>
-    
+
       <div class="footer-copyright text-center"
            id="cpyrgt">
         © 2021 Copyright:
@@ -445,11 +443,11 @@ inline type name ( arguments ... ) { instructions ... }
     <script>
       AOS.init();
     </script>
-    </body>
-    
-    </html>
-    
-    <!--Pallete 
+  </body>
+
+</html>
+
+<!--Pallete 
           #E7717D
     
       #C2CAD0
@@ -463,4 +461,3 @@ inline type name ( arguments ... ) { instructions ... }
        #464648
             
         -->
-    
