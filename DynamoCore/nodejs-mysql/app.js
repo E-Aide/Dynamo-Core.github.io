@@ -12,11 +12,11 @@ const db = mysql.createConnection({
     database: process.env.DATABASE
 });
 
-const publicDirectory = "F:\\Dynamo-Core.github.io\\DynamoCore\\public";
+const publicDirectory = "C:\\Users\\stand\\Desktop\\cllgproj\\Dynamo-Core.github.io\\DynamoCore\\public";
 app.use(express.static(publicDirectory));
 console.log(publicDirectory);
 
-app.set('views', 'F:\\Dynamo-Core.github.io\\DynamoCore');
+
 app.set('view engine', 'html');
 app.engine('html', require('hbs').__express);
 
@@ -29,25 +29,10 @@ db.connect( (error) =>{
     }
 })
 
-app.get("/",(req, res)=>{
-    app.set('views', 'F:\\Dynamo-Core.github.io\\DynamoCore');
-    res.render("DynamoCore");
-});
+app.set('views', 'C:\\Users\\stand\\Desktop\\cllgproj\\Dynamo-Core.github.io\\DynamoCore\\views');
 
-app.get("/community",(req, res)=>{
-    app.set('views', 'F:\\Dynamo-Core.github.io\\DynamoCore\\html\\Community');
-    res.render("community");
-});
+app.use('/',require('../routes/pages'));
 
-app.get("/articles",(req, res)=>{
-    app.set('views', 'F:\\Dynamo-Core.github.io\\DynamoCore\\html\\Articles');
-    res.render("ArticlesMain");
-});
-
-app.get("/LangGuide",(req, res)=>{
-    app.set('views', 'F:\\Dynamo-Core.github.io\\DynamoCore\\html\\Languages');
-    res.render("LangGuide");
-});
 
 app.listen(5000,()=>{
     console.log("Server started port 5001")
