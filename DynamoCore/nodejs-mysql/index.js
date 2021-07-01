@@ -4,6 +4,7 @@ const path = require('path');
 const dotenv = require('dotenv');
 const mysql = require("mysql");
 
+
 dotenv.config({ path: './.env'});
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
@@ -12,10 +13,12 @@ const db = mysql.createConnection({
     database: process.env.DATABASE
 });
 
-const publicDirectory = "C:\\Users\\stand\\Desktop\\cllgproj\\Dynamo-Core.github.io\\DynamoCore\\public";
+const publicDirectory = "C:\\Users\\stand\\Desktop\\cllgproj\\Dynamo-Core.github.io\\DynamoCore";
 app.use(express.static(publicDirectory));
 console.log(publicDirectory);
 
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 
 app.set('view engine', 'html');
 app.engine('html', require('hbs').__express);
@@ -29,10 +32,10 @@ db.connect( (error) =>{
     }
 })
 
-app.set('views', 'C:\\Users\\stand\\Desktop\\cllgproj\\Dynamo-Core.github.io\\DynamoCore\\views');
+app.set('views', 'C:\\Users\\stand\\Desktop\\cllgproj\\Dynamo-Core.github.io\\DynamoCore');
 
 app.use('/',require('../routes/pages'));
-
+app.use('/auth',require('../routes/auth'));
 
 app.listen(5000,()=>{
     console.log("Server started port 5001")
