@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const dotenv = require('dotenv');
 const mysql = require("mysql");
-
+const cookieParser = require('cookie-parser');
 
 dotenv.config({ path: './.env'});
 const db = mysql.createConnection({
@@ -19,6 +19,7 @@ console.log(publicDirectory);
 
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
+app.use(cookieParser());
 
 app.set('view engine', 'html');
 app.engine('html', require('hbs').__express);

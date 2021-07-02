@@ -15,14 +15,33 @@ const db = mysql.createConnection({
      try{
          const email = req.body.email;
          const pass = req.body.pass;
-
+         
          if(!email || !pass){
             //send to fill pass and email
          }
 
-         db.query('SELECT *From userinfo email = ?', [email], async (error,results) =>{
-             if(!results || !(await bcrypt.compare(password, results[0].password))) {
-                 //res.status(401).render(loginfile)
+         db.query('SELECT * FROM userinfo WHERE email = ?', [email], async (error,results) =>{
+             if(error){
+                 console.log(error);
+             }
+             if(!results || !(pass=== results[0].password)) {
+                 console.log(results[0].password);
+                 console.log(pass, 8);
+               res.status(401).render('DynamoCore');
+             }else {
+                 const id = results[0].username;
+                 const token = jwt.sign({id}, process.env.JWT_SECRET, {
+                     expiresIn: process.env.JWT_EXPIRES_IN
+                 });
+
+                 console.log("The token is " + token);
+
+                 const cookieOptions = {
+                     expires: new Date( Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60),
+                     httpOnly: true
+                 }
+                 res.cookie('jwt', token, cookieOptions );
+                 res.status(200).redirect('DynamoCore');
              }
          })
 
@@ -30,7 +49,8 @@ const db = mysql.createConnection({
          console.log(error);
      }
  
- } 
+ }
+
  exports.register = (req, res) => {
      console.log(req.body);
 
@@ -58,7 +78,7 @@ const db = mysql.createConnection({
     if(error){
         console.log(error);
     } else {
-        return res.render('/views/FORMS/sign_in');
+        return res.render('DynamoCore');
     }
 
 
