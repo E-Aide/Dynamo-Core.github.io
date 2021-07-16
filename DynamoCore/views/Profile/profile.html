@@ -64,6 +64,19 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <!-- Here goes the Parse SDK for JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://npmcdn.com/parse/dist/parse.min.js"
+    ></script>
+    <script type="text/javascript" type="text/javascript">
+      Parse.initialize(
+        "aC742iFhVWVr82DREWfariSl6puXp01vAsluN4mH",
+        "huVOduZAMwxcOTOPVu16tXMeLQ1Aj9L6ItfuQjfY"
+      ); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+      Parse.serverURL = "https://parseapi.back4app.com/";
+    </script>
+    <script src="../../public/jscripts/Profile/profile.js"></script>
     <title>Dynamo Core</title>
   </head>
   <body>
@@ -136,12 +149,14 @@
                 </a>
     </aside>
     <section class="profile-info">
-      <h1 class="first-name">firstnameHERE</h1>
-      <h1 class="second-name">LastnameHERE</h1>
+      <h1 class="first-name"></h1>
       <h2>ABOUT</h2>
-      <p>
-        hello hello, I'm Admin, artist and developer 🌼 student at BMSCE; intern at MTA 🌱 happy to be here! 🌿 let's code the best we can!
-      </p>
+      <div>
+        <ul>
+        <li class="Contact">Contact: </li>
+        <li class="Email">Email: </li>
+        </ul>
+      </div>
 
       <aside class="social-media-icons">
         <a href="https://twitter.com/" target="_blank">

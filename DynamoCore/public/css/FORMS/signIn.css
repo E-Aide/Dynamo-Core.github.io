@@ -58,12 +58,11 @@ button {
 }
 
 .form.sign-up {
-  width: 612px!important;
+  width: 612px !important;
 }
 
 .cont.s--signup .sub-cont {
   transform: translate3d(-640px, 0, 0);
-
 }
 
 button {
@@ -212,13 +211,18 @@ input {
 }
 
 .forgot-pass {
-  margin-top: 15px;
+  margin-top: 20px;
   text-align: center;
   font-size: 12px;
+  display: block;
+  width: 20%;
+  height: 8%;
+  transform: translateX(14pc);
+  margin-bottom: 58px;
 }
 
 .submit {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
   background: #d4af7a;
   text-transform: uppercase;
@@ -264,28 +268,28 @@ input {
   right: 5px;
 }
 
-.inputRow{
+.inputRow {
   width: 80%;
   position: relative;
-  left:50px
+  left: 50px;
 }
 
-.profilePic{
-  width:40px;
-  height:60px;
+.profilePic {
+  width: 40px;
+  height: 60px;
 }
-.profileUpload{
+.profileUpload {
   transform: translateY(-8px);
   margin-bottom: -66px;
 }
-.signupDetails{
+.signupDetails {
   margin-top: 10px;
 }
-.signupDetails label{
-  text-align: left!important;
-  margin:unset !important;
+.signupDetails label {
+  text-align: left !important;
+  margin: unset !important;
 }
-.form-check{
- margin-top:10px;
- margin-bottom: 10px;
+.form-check {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

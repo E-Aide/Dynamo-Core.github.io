@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../../public/css/Layout.css" />
     <link rel="stylesheet" href="../../public/css/FORMS/signIn.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.15.1/tingle.css">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -37,7 +38,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js"></script>
-
+    <meta content="Back4App Inc" name="author">
     <!--Icons-->
     <link
       rel="stylesheet"
@@ -56,6 +57,21 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.15.1/tingle.min.js"></script>
+     <!-- Here goes the Parse SDK for JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://npmcdn.com/parse/dist/parse.min.js"
+    ></script>
+    <script type="text/javascript" type="text/javascript">
+      Parse.initialize(
+        "aC742iFhVWVr82DREWfariSl6puXp01vAsluN4mH",
+        "huVOduZAMwxcOTOPVu16tXMeLQ1Aj9L6ItfuQjfY"
+      ); 
+      Parse.serverURL = "https://parseapi.back4app.com/";
+    </script>
+    <script src="../../public/jscripts/Form-Login/index.js"></script>
+
     <title>Dynamo Core</title>
   </head>
 
@@ -115,11 +131,11 @@
 
     <div class="cont">
       
-      <form action="/auth/login" method="POST" class="form sign-in">
+      <div  class="form sign-in" >
         <h2>Welcome back,</h2>
         <label class="inputRow">
-          <span>Email</span>
-          <input type="email" name="email" id="userEmail" title="Email" required />
+          <span>UserName</span>
+          <input type="text" name="UserName" id="UserName" title="Username" required />
         </label>
         <label class="inputRow">
           <span>Password</span>
@@ -138,12 +154,9 @@
             required
           />
         </label>
-        <p class="forgot-pass">Forgot password?</p>
-        <button type="submit" class="submit">Sign In</button>
-        <button type="button" class="fb-btn">
-          Connect with <span>facebook</span>
-        </button>
-      </form>
+        <button class="forgot-pass btn-primary" onclick="modal.open()">Forgot password?</button>
+        <button class="submit" onclick="logIn()" >Sign In</button>
+      </div>
       <div class="sub-cont">
         <div class="Signimg">
           <div class="img__text m--up">
@@ -161,7 +174,7 @@
             <span class="m--in">Sign In</span>
           </div>
         </div>
-        <form action="/auth/register" method="POST" class="form sign-up">
+        <div  class="form sign-up" >
           <h2>Time to feel like home,</h2>
           <div class="signupDetails">
           <div class="form-row ">
@@ -177,8 +190,8 @@
             </div>
           </div>
           <div class=" col-md-8 ">
-            <label for="email">Email:<span class="required"></span> </label>
-            <input type="email" name="email" class="form-control " id="email" placeholder=" Enter Your Email Address "required>
+            <label for="email">Email:<span></span> </label>
+            <input type="email" name="email" class="form-control " id="email" placeholder=" Enter Your Email Address ">
           </div>
          <div class="form-row">
           <div class="col-md-5">
@@ -202,20 +215,24 @@
             </label>
             
           </div>
-        </div>
-          <button type="submit" class="submit" onclick="SignUP()">Sign Up</button>
+          </div>
+          <button class="button" onclick="signUp()">Sign Up</button>
           <button type="button" class="fb-btn">
             Join with <span>facebook</span>
           </button>
+          </div>
         </div>
-      </form>
       </div>
     </div>
     <script src="../../public/jscripts/Form-Login/form.js"></script>
     <script src="../../public/jscripts/Form-Login/sigIn.js"></script>
     <script src="../../public/jscripts/Loginlogic.js"></script>
-    <script src="../../public/jscripts/Form-Login/index.js"></script>
+    
     <!--Continue here-->
+
+    <!--Modal here-->
+   
+    <!--Modal here-->
     <!--Lower Contents END-->
     <!--Footer-->
     <footer class="footer-content">
