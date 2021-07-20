@@ -2,19 +2,20 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../css/Layout.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../public/css/Layout.css" />
+    <link rel="stylesheet" href="../public/css/FORMS/signIn.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.15.1/tingle.css">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
     <link
       rel="icon"
-      href="../img/icon/LOGO_NoBackground.png"
+      href="../public/img/icon/LOGO_NoBackground.png"
       sizes="16x16"
       type="image/x-icon"
     />
-    <!--Fonts-->
+    <!--FONTS-->
     <link
       href="https://fonts.googleapis.com/css?family=Alegreya Sans SC"
       rel="stylesheet"
@@ -27,59 +28,85 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya Sans SC"
+      rel="stylesheet"
+    />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js"></script>
+    <meta content="Back4App Inc" name="author">
+    <!--Icons-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+      integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
     <script
       src="https://kit.fontawesome.com/9ccb26cf81.js"
       crossorigin="anonymous"
     ></script>
-
-    <!--Fonts-->
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js"
-      integrity="sha512-Jen3K+iRN4thSYDEyHwUGYFxNslAUCTV9P/g0k836eaoq/tplAUCzRPUyDxKUjBlKdJhamW7S3u7NWSGEEdIQw=="
-      crossorigin="anonymous"
-    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.15.1/tingle.min.js"></script>
+     <!-- Here goes the Parse SDK for JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://npmcdn.com/parse/dist/parse.min.js"
+    ></script>
+    <script type="text/javascript" type="text/javascript">
+      Parse.initialize(
+        "aC742iFhVWVr82DREWfariSl6puXp01vAsluN4mH",
+        "huVOduZAMwxcOTOPVu16tXMeLQ1Aj9L6ItfuQjfY"
+      ); 
+      Parse.serverURL = "https://parseapi.back4app.com/";
+    </script>
+    <script src="../public/jscripts/Form-Login/index.js"></script>
+
     <title>Dynamo Core</title>
   </head>
 
   <body>
     <!-- horizontal navbar -->
-    <header>
+       <header>
       <div class="wrapHead">
         <nav class="navbar navbar-default" id="mNavbar">
           <div class="container-fluid" id="navtop">
             <div class="navbar-header">
-              <a id="txtdeco" href="DynamoCore.html">
+              <a id="txtdeco" href="../views/DynamoCore.html">
                 <img
                   class="img img-rounded imgstat"
                   alt="Navbar_logo"
-                  src="../img/icon/LOGO_NoBackground.png"
+                  src="../public/img/icon/LOGO_NoBackground.png"
                   width="50"
                   height="50"
                   class="d-inline-block align-top"
                 />
               </a>
-              <span><a id="head" href="DynamoCore.html">Dynamo Core</a></span>
+              <span><a id="head" href="../views/DynamoCore.html">Dynamo Core</a></span>
             </div>
             <ul class="nav navbar-nav navbar">
               <li class="auraButton">
-                <a id="auraButtontext" href="../html/Projects/projectsMain.html"
+                <a id="auraButtontext" href="../vews/Projects/projectsMain.html"
                   >COMMUNITY</a
                 >
               </li>
               <li class="auraButton">
-                <a id="auraButtontext" href="../html/Articles/ArticlesMain.html"
+                <a id="auraButtontext" href="../views/Articles/ArticlesMain.html"
                   >ARTICLES</a
                 >
               </li>
               <li class="auraButton">
-                <a id="auraButtontext" href="../html/Languages/LangGuide.html"
+                <a id="auraButtontext" href="../views/Languages/LangGuide.html"
                   >LANG-GUIDES</a
                 >
               </li>
@@ -88,7 +115,7 @@
               <li>
                 <a
                   id="auraButtontext"
-                  href="../html/FORMS/sign_in.html"
+                  href="../views/FORMS/sign_in.html"
                   class="LoGup"
                   ><span class="glyphicon glyphicon-user"></span> Login
                 </a>
@@ -99,54 +126,92 @@
       </div>
     </header>
     <!-- horizontal navbar -->
+    <div class="bodyBackground"></div>
+    <canvas class="background"></canvas>
 
-    <!--Upper contents Begins-->
-    <div>
-      <img
-        src="../img/icon/pixel.jpg"
-        alt="simple"
-        width="100%"
-        height="100%"
-      />
+    <div class="cont">
+      
+      <div  class="form sign-in" >
+        <h2>Welcome back,</h2>
+        <label class="inputRow">
+          <span>Name</span>
+          <input type="text" name="aName" id="aName" title="Name of the attendant" required />
+        </label>
+        <label class="inputRow">
+          <span>Seminar ID</span>
+          <input type="text" name="semID" id="semID"  title="ID of the seminar" required />
+        </label>
+        <label class="inputRow">
+          <span>E-mail</span>
+          <input type="email" name="email" id="email" title="Speaker for the session" required />
+        </label>
+        <button class="submit">Register</button>
+      </div>
+      <div class="sub-cont">
+        <div class="Signimg">
+          <div class="img__text m--up">
+            <h2>Wanna host one?</h2>
+            <p>Hit the button below and fill up the details!</p>
+          </div>
+          <div class="img__text m--in">
+            <h2>Wanna attend a seminar?</h2>
+            <p>
+              If you already have an account, just sign up for the event!
+            </p>
+          </div>
+          <div class="img__btn">
+            <span class="m--up">Host</span>
+            <span class="m--in">Register</span>
+          </div>
+        </div>
+        <div  class="form sign-up" >
+          <h2>Fill up the form</h2>
+          <div class="signupDetails">
+            <div class="form-row ">
+              <div class="col-md-8">
+                <label for="topic" >Topic:<span class="required"></span> </label>
+                <input type="text" id="topic" name="topic" class="form-control" title="Use only alphabets, digits and underscore" placeholder="Enter topic of the seminar" required>
+              </div>
+            </div>
+            <div class=" col-md-8 ">
+              <label for="email">Host E-mail ID:<span></span> </label>
+              <input type="email" name="email" class="form-control " id="email" placeholder=" Enter host's Email Address ">
+            </div>
+            <div class="col-md-8">
+              <label for="topic" >Speaker:<span class="required"></span> </label>
+              <input type="text" id="speaker" name="speaker" class="form-control" title="Use only alphabets" placeholder="Enter speaker's name" required>
+            </div>
+            <div class="col-md-8">
+              <label for="loc" >Location:<span class="required"></span> </label>
+              <input type="text" id="loc" name="loc" class="form-control" title="Use only alphabets" placeholder="Enter location of the session" required>
+            </div>
+           </div>
+           <div class=" col-md-12">
+            <div class="form-check">
+              <input class="form-check-input col-md-1" type="checkbox" value="" id="Check" required>
+              <label class="form-check-label col-md-6" for="invalidCheck">Agree to terms and conditions<span class="required"></span> 
+              </label>
+            </div>
+          </div>
+          <button class="button" onclick="signUp()">Sign Up</button>
+          <button type="button" class="fb-btn">
+            Join with <span>facebook</span>
+          </button>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--Upper contents END-->
-
-    <!--Lower Contents Begins-->
+    <script src="../public/jscripts/Form-Login/form.js"></script>
+    <script src="../public/jscripts/Form-Login/sigIn.js"></script>
+    <script src="../public/jscripts/Loginlogic.js"></script>
     
-    <h2>Seminar Details</h2>
-    <form action="post">
-      <label for="topic">Topic:</label><br>
-      <input type="text" id="topic" name="topic" placeholder="Computer Networks" required><br>
-      <label for="loc">Location:</label><br>
-      <input type="text" id="loc" name="loc" placeholder="Bangalore" required><br>
-      <label for="speaker" required>Speaker:</label><br>
-      <input type="text" id="speaker" name="speaker" placeholder="Ajith Kumar" required><br>
-      <label for="date">Date:</label><br>
-      <input type="text" id="date" name="date" placeholder="DD-MM-YYYY" required><br><br>
-      <label>Remote:</label><br>
-      <input type="radio" id="yes" name="remote" value="yes" required>
-      <label for="yes">Yes</label>
-      <input type="radio" id="no" name="remote" value="no" required>
-      <label for="no">No</label><br>
-      <input type="submit" value="Submit">
-    </form>
+    <!--Continue here-->
 
-    <h2>Registration</h2>
-    <form action="post">
-      <label for="uid">Topic:</label><br>
-      <input type="text" id="uid" name="uid" placeholder="×§0L0™×" required><br>
-      <label for="semid">Seminar ID:</label><br>
-      <input type="text" id="semid" name="semid" placeholder="000001" required><br>
-      <label for="emailID">Email ID:</label><br>
-      <input type="email" id="emailID" name="emailID" placeholder="example@domain.com" required><br>
-      <input type="submit" value="Submit">
-    </form>
-    
+    <!--Modal here-->
+   
+    <!--Modal here-->
     <!--Lower Contents END-->
-
-    <script src="../jscripts/Loginlogic.js"></script>
     <!--Footer-->
-
     <footer class="footer-content">
       <div class="jumbotron text-md-left">
         <span class="ribbonfootz"
@@ -154,7 +219,7 @@
         >
         <div class="row">
           <div class="col-md-5">
-            <img src="../img/icon/DC.png" alt="footer-img" id="footer-img" />
+            <img src="../public/img/icon/DC.png" alt="footer-img" id="footer-img" />
             <h3 class="footer-text text-left">Dynamo Core:</h3>
             <p id="footercontent">
               Dynamo Core was made in the hopes to provide a place for the
@@ -171,15 +236,15 @@
             <ul class="list-unstyled text-left">
               <li>
                 <a
-                  href="../html/Articles/Penetration
-                  Testing.html"
+                  href="../views/Articles/Penetration
+              Testing.html"
                   >Penetration Testing</a
                 >
               </li>
               <li>
                 <a
-                  href="../html/Articles/Phishing
-                  Security.html"
+                  href="../views/Articles/Phishing
+              Security.html"
                   >Phishing Security</a
                 >
               </li>
@@ -189,9 +254,13 @@
           <div class="col-md-2">
             <h4 class="text-uppercase text-left footCol">Language Guides</h4>
             <ul class="list-unstyled text-left">
-              <li><a href="../html/Languages/C/intro/historyofc.html">C</a></li>
               <li>
-                <a href="../html/Languages/C++/intro/HistoryofC++.html">C++</a>
+                <a href="../views/Languages/C/intro/historyofc.html">C</a>
+              </li>
+              <li>
+                <a href="../views/Languages/C++/intro/HistoryofC++.html"
+                  >C++</a
+                >
               </li>
               <li><div style="color: #337ab7">Java(Coming Soon!)</div></li>
             </ul>
@@ -231,27 +300,9 @@
 
       <div class="footer-copyright text-center" id="cpyrgt">
         © 2021 Copyright:
-        <a href="../DynamoCore.html"> DynamoCore.com</a>
+        <a href="../views/DynamoCore.html"> DynamoCore.com</a>
       </div>
     </footer>
     <!--Footer-->
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
-
-<!--Pallete 
-      #E7717D
-
-  #C2CAD0
-
-    #C28980
-
-    #7E685A
-
-  #AFD275
-
-   #464648
-        
-    -->
