@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/Layout.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="icon"
+      href="../img/icon/LOGO_NoBackground.png"
+      sizes="16x16"
+      type="image/x-icon"
+    />
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya Sans SC"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9ccb26cf81.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Fonts-->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js"
+      integrity="sha512-Jen3K+iRN4thSYDEyHwUGYFxNslAUCTV9P/g0k836eaoq/tplAUCzRPUyDxKUjBlKdJhamW7S3u7NWSGEEdIQw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Dynamo Core</title>
+  </head>
+
+  <body>
+    <!-- horizontal navbar -->
+    <header>
+      <div class="wrapHead">
+        <nav class="navbar navbar-default" id="mNavbar">
+          <div class="container-fluid" id="navtop">
+            <div class="navbar-header">
+              <a id="txtdeco" href="DynamoCore.html">
+                <img
+                  class="img img-rounded imgstat"
+                  alt="Navbar_logo"
+                  src="../img/icon/LOGO_NoBackground.png"
+                  width="50"
+                  height="50"
+                  class="d-inline-block align-top"
+                />
+              </a>
+              <span><a id="head" href="DynamoCore.html">Dynamo Core</a></span>
+            </div>
+            <ul class="nav navbar-nav navbar">
+              <li class="auraButton">
+                <a id="auraButtontext" href="../html/Projects/projectsMain.html"
+                  >COMMUNITY</a
+                >
+              </li>
+              <li class="auraButton">
+                <a id="auraButtontext" href="../html/Articles/ArticlesMain.html"
+                  >ARTICLES</a
+                >
+              </li>
+              <li class="auraButton">
+                <a id="auraButtontext" href="../html/Languages/LangGuide.html"
+                  >LANG-GUIDES</a
+                >
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar" id="loginNav">
+              <li>
+                <a
+                  id="auraButtontext"
+                  href="../html/FORMS/sign_in.html"
+                  class="LoGup"
+                  ><span class="glyphicon glyphicon-user"></span> Login
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- horizontal navbar -->
+
+    <!--Upper contents Begins-->
+    <div>
+      <img
+        src="../img/icon/pixel.jpg"
+        alt="simple"
+        width="100%"
+        height="100%"
+      />
+    </div>
+    <!--Upper contents END-->
+
+    <!--Lower Contents Begins-->
+    
+    <h2>Seminar Details</h2>
+    <form action="post">
+      <label for="topic">Topic:</label><br>
+      <input type="text" id="topic" name="topic" placeholder="Computer Networks" required><br>
+      <label for="loc">Location:</label><br>
+      <input type="text" id="loc" name="loc" placeholder="Bangalore" required><br>
+      <label for="speaker" required>Speaker:</label><br>
+      <input type="text" id="speaker" name="speaker" placeholder="Ajith Kumar" required><br>
+      <label for="date">Date:</label><br>
+      <input type="text" id="date" name="date" placeholder="DD-MM-YYYY" required><br><br>
+      <label>Remote:</label><br>
+      <input type="radio" id="yes" name="remote" value="yes" required>
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="remote" value="no" required>
+      <label for="no">No</label><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <h2>Registration</h2>
+    <form action="post">
+      <label for="uid">Topic:</label><br>
+      <input type="text" id="uid" name="uid" placeholder="×§0L0™×" required><br>
+      <label for="semid">Seminar ID:</label><br>
+      <input type="text" id="semid" name="semid" placeholder="000001" required><br>
+      <label for="emailID">Email ID:</label><br>
+      <input type="email" id="emailID" name="emailID" placeholder="example@domain.com" required><br>
+      <input type="submit" value="Submit">
+    </form>
+    
+    <!--Lower Contents END-->
+
+    <script src="../jscripts/Loginlogic.js"></script>
+    <!--Footer-->
+
+    <footer class="footer-content">
+      <div class="jumbotron text-md-left">
+        <span class="ribbonfootz"
+          ><span class="ribbonfoot footer-text">Get In Touch!</span></span
+        >
+        <div class="row">
+          <div class="col-md-5">
+            <img src="../img/icon/DC.png" alt="footer-img" id="footer-img" />
+            <h3 class="footer-text text-left">Dynamo Core:</h3>
+            <p id="footercontent">
+              Dynamo Core was made in the hopes to provide a place for the
+              global community to come together at a place to talk on things
+              that they like to and want to do. We hope that it becomes a part
+              of your journey as a place to learn and share and its you who can
+              make this community grow.
+            </p>
+          </div>
+
+          <div class="col-md-2"></div>
+          <div class="col-md-2">
+            <h4 class="text-uppercase text-left footCol">Articles</h4>
+            <ul class="list-unstyled text-left">
+              <li>
+                <a
+                  href="../html/Articles/Penetration
+                  Testing.html"
+                  >Penetration Testing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../html/Articles/Phishing
+                  Security.html"
+                  >Phishing Security</a
+                >
+              </li>
+              <li><div style="color: #337ab7">Coming Soon!</div></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4 class="text-uppercase text-left footCol">Language Guides</h4>
+            <ul class="list-unstyled text-left">
+              <li><a href="../html/Languages/C/intro/historyofc.html">C</a></li>
+              <li>
+                <a href="../html/Languages/C++/intro/HistoryofC++.html">C++</a>
+              </li>
+              <li><div style="color: #337ab7">Java(Coming Soon!)</div></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" id="footerLinksTxt">
+          <div class="col-md-7" id="footerLinksTxt">
+            <p class="footer-text">Share your thoughts, and leave a Like</p>
+          </div>
+          <div class="col-md-5" id="footerLinks">
+            <p class="text-left">
+              <a
+                href="https://facebook.com/"
+                class="social-round-icon orange-round-icon fa-icon"
+                title=""
+              >
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://twitter.com/"
+                class="social-round-icon orange-round-icon fa-icon"
+                title=""
+              >
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                class="social-round-icon orange-round-icon fa-icon"
+                title=""
+              >
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright text-center" id="cpyrgt">
+        © 2021 Copyright:
+        <a href="../DynamoCore.html"> DynamoCore.com</a>
+      </div>
+    </footer>
+    <!--Footer-->
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
+
+<!--Pallete 
+      #E7717D
+
+  #C2CAD0
+
+    #C28980
+
+    #7E685A
+
+  #AFD275
+
+   #464648
+        
+    -->
