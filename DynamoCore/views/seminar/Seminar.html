@@ -82,7 +82,7 @@
         <nav class="navbar navbar-default" id="mNavbar">
           <div class="container-fluid" id="navtop">
             <div class="navbar-header">
-              <a id="txtdeco" href="../../views/DynamoCore.html">
+              <a id="txtdeco" href="../DynamoCore.html">
                 <img
                   class="img img-rounded imgstat"
                   alt="Navbar_logo"
@@ -92,21 +92,21 @@
                   class="d-inline-block align-top"
                 />
               </a>
-              <span><a id="head" href="../../views/DynamoCore.html">Dynamo Core</a></span>
+              <span><a id="head" href="../DynamoCore.html">Dynamo Core</a></span>
             </div>
             <ul class="nav navbar-nav navbar">
               <li class="auraButton">
-                <a id="auraButtontext" href="../../vews/Projects/projectsMain.html"
+                <a id="auraButtontext" href="../Projects/projectsMain.html"
                   >COMMUNITY</a
                 >
               </li>
               <li class="auraButton">
-                <a id="auraButtontext" href="../../views/Articles/ArticlesMain.html"
+                <a id="auraButtontext" href="../Articles/ArticlesMain.html"
                   >ARTICLES</a
                 >
               </li>
               <li class="auraButton">
-                <a id="auraButtontext" href="../../views/Languages/LangGuide.html"
+                <a id="auraButtontext" href="../Languages/LangGuide.html"
                   >LANG-GUIDES</a
                 >
               </li>
@@ -115,20 +115,10 @@
               <li>
                 <a
                   id="auraButtontext"
-                  href="../../views/FORMS/sign_in.html"
-                  class="LoGup disableMenu"
+                  href="../FORMS/sign_in.html"
+                  class="LoGup"
                   ><span class="glyphicon glyphicon-user"></span> Login
                 </a>
-              </li>
-              <li>
-                <div class="dropdown logged">
-                  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="loggedInDis">
-                  </button>
-                  <ul class="dropdown-menu loggedDrop">
-                   <li><a href="../../views/Profile/profile.html" class="profileBtn">Profile</a></li>
-                   <li><a class="logoutButton" onclick="logout()">Log Out</a></li>
-                 </ul>
-                 </div>
               </li>
             </ul>
           </div>
@@ -144,87 +134,64 @@
       <div  class="form sign-in" >
         <h2>Welcome back,</h2>
         <label class="inputRow">
-          <span>UserName</span>
-          <input type="text" name="UserName" id="UserName" title="Username" required />
+          <span>Name</span>
+          <input type="text" name="aName" id="aName" title="Name of the attendant" required />
         </label>
         <label class="inputRow">
-          <span>Password</span>
-          <span
-            class="glyphicon glyphicon-eye-open"
-            id="iconeye"
-            onclick="passDisplay()"
-          ></span>
-          <input
-            type="password"
-            name="pass"
-            id="password"
-            minlength="8"
-            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-            required
-          />
+          <span>Seminar ID</span>
+          <input type="text" name="semID" id="semID"  title="ID of the seminar" required />
         </label>
-        <button class="forgot-pass btn-primary" onclick="modal.open()">Forgot password?</button>
-        <button class="submit effect3" onclick="logIn()" >Sign In</button>
+        <label class="inputRow">
+          <span>E-mail</span>
+          <input type="email" name="email" id="email" title="Speaker for the session" required />
+        </label>
+        <button class="submit">Register</button>
       </div>
       <div class="sub-cont">
         <div class="Signimg">
           <div class="img__text m--up">
-            <h2>New here?</h2>
-            <p>Sign up and discover great amount of new opportunities!</p>
+            <h2>Wanna host one?</h2>
+            <p>Hit the button below and fill up the details!</p>
           </div>
           <div class="img__text m--in">
-            <h2>One of us?</h2>
+            <h2>Wanna attend a seminar?</h2>
             <p>
-              If you already has an account, just sign in. We've missed you!
+              If you already have an account, just sign up for the event!
             </p>
           </div>
           <div class="img__btn">
-            <span class="m--up">Sign Up</span>
-            <span class="m--in">Sign In</span>
+            <span class="m--up">Host</span>
+            <span class="m--in">Register</span>
           </div>
         </div>
         <div  class="form sign-up" >
-          <h2>Time to feel like home,</h2>
+          <h2>Fill up the form</h2>
           <div class="signupDetails">
-          <div class="form-row ">
+            <div class="form-row ">
+              <div class="col-md-8">
+                <label for="topic" >Topic:<span class="required"></span> </label>
+                <input type="text" id="topic" name="topic" class="form-control" title="Use only alphabets, digits and underscore" placeholder="Enter topic of the seminar" required>
+              </div>
+            </div>
+            <div class=" col-md-8 ">
+              <label for="email">Host E-mail ID:<span></span> </label>
+              <input type="email" name="email" class="form-control " id="email" placeholder=" Enter host's Email Address ">
+            </div>
             <div class="col-md-8">
-              <label for="userName " >Name:<span class="required"></span> </label>
-              <input type="text" id="username" name="userName" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" class="form-control" title="Use only alphabets,digits and underscore" placeholder="Enter first name" required>
+              <label for="topic" >Speaker:<span class="required"></span> </label>
+              <input type="text" id="speaker" name="speaker" class="form-control" title="Use only alphabets" placeholder="Enter speaker's name" required>
             </div>
-            <div class="col-md-4 profileUpload">
-              <img src="../../public/img/icon/blankpicture-.png" width="80px" height="80px"class="modal-content" alt="profileUpload" id="profileUpload">
-                <label for="profilePic" ></label>
-                <input type="file" id="profilePic"  name="profilePic" accept="image/png, image/jpeg"  >
-              </img>
+            <div class="col-md-8">
+              <label for="loc" >Location:<span class="required"></span> </label>
+              <input type="text" id="loc" name="loc" class="form-control" title="Use only alphabets" placeholder="Enter location of the session" required>
             </div>
-          </div>
-          <div class=" col-md-8 ">
-            <label for="email">Email:<span></span> </label>
-            <input type="email" name="email" class="form-control " id="email" placeholder=" Enter Your Email Address ">
-          </div>
-         <div class="form-row">
-          <div class="col-md-5">
-            <label for="password">Password:<span class="required"></span> </label>
-            <input type="password" class="form-control validate " id="pass" name="pass" placeholder=" Enter Your password here " minlength="8"  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-          </div>
-          <div class="col-md-7">
-            <label for="conPassword">Confrim Password:<span class="required chekPass"></span> </label>
-            <input type="password" class="form-control validate " id="conPassw" name="conPassw" placeholder=" Enter Your password here " minlength="8" oninput="passwordVerify()"  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-          </div>  
-         </div>
-         <div class=" col-md-12 ">
-           <label for="contactNo">Contact Number:</label>
-           <input type="tel" id="contactNo" class="form-control" name="contactNo" placeholder="+XX XXXXX XXXXX" >
-         </div>
-         
-         <div class=" col-md-12">
-          <div class="form-check">
-            <input class="form-check-input col-md-1" type="checkbox" value="" id="Check" required>
-            <label class="form-check-label col-md-6" for="invalidCheck">Agree to terms and conditions<span class="required"></span> 
-            </label>
-            
-          </div>
+           </div>
+           <div class=" col-md-12">
+            <div class="form-check">
+              <input class="form-check-input col-md-1" type="checkbox" value="" id="Check" required>
+              <label class="form-check-label col-md-6" for="invalidCheck">Agree to terms and conditions<span class="required"></span> 
+              </label>
+            </div>
           </div>
           <button class="button" onclick="signUp()">Sign Up</button>
           <button type="button" class="fb-btn">
@@ -269,14 +236,14 @@
             <ul class="list-unstyled text-left">
               <li>
                 <a
-                  href="../../views/Articles/Penetration
+                  href="../Articles/Penetration
               Testing.html"
                   >Penetration Testing</a
                 >
               </li>
               <li>
                 <a
-                  href="../../views/Articles/Phishing
+                  href="../Articles/Phishing
               Security.html"
                   >Phishing Security</a
                 >
@@ -288,10 +255,10 @@
             <h4 class="text-uppercase text-left footCol">Language Guides</h4>
             <ul class="list-unstyled text-left">
               <li>
-                <a href="../../views/Languages/C/intro/historyofc.html">C</a>
+                <a href="../Languages/C/intro/historyofc.html">C</a>
               </li>
               <li>
-                <a href="../../views/Languages/C++/intro/HistoryofC++.html"
+                <a href="../Languages/C++/intro/HistoryofC++.html"
                   >C++</a
                 >
               </li>
@@ -333,7 +300,7 @@
 
       <div class="footer-copyright text-center" id="cpyrgt">
         © 2021 Copyright:
-        <a href="../../views/DynamoCore.html"> DynamoCore.com</a>
+        <a href="../DynamoCore.html"> DynamoCore.com</a>
       </div>
     </footer>
     <!--Footer-->

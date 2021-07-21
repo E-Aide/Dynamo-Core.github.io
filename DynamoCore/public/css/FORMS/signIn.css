@@ -293,3 +293,37 @@ input {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+/*signIn/signUp button */
+.button.effect3 {
+  color: lightyellow;
+}
+.button.effect3.effect3::after,
+.button.effect3.effect3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+}
+
+.button.effect3.effect3::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: lightcoral;
+  border-right-color: lightcoral;
+}
+
+.button.effect3.effect3::before {
+  top: 0;
+  left: 0;
+  border-top-color: lightcoral;
+  border-left-color: lightcoral;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
