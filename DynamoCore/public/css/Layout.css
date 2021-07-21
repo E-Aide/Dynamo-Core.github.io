@@ -469,3 +469,34 @@ footer > .jumbotron {
     box-shadow: 0px 0px 10px 3px rgb(240, 141, 60);
   }
 }
+
+.disableMenu {
+	display: none !important;
+}
+.enabledMenu{
+  display:block !important;
+}
+.logged{
+  width: 116px;
+}
+.logoutButton{
+  cursor: pointer!important;
+}
+.logoutButton:hover{
+  background: aliceblue;
+  border-radius: unset;
+}
+.profileBtn{
+
+}
+.loggedDrop{
+  width: 26px!important;
+  height: 60px;
+  min-width: 95px!important;
+}
+#loggedInDis{
+  width: 116px!important;
+}
+#loggedInDis:hover{
+  background: aliceblue;
+}

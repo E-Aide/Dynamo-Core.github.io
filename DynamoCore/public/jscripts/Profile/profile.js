@@ -1,7 +1,7 @@
 Parse.initialize(
     "aC742iFhVWVr82DREWfariSl6puXp01vAsluN4mH",
     "huVOduZAMwxcOTOPVu16tXMeLQ1Aj9L6ItfuQjfY"
-  ); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+  ); 
   Parse.serverURL = "https://parseapi.back4app.com/";
 
   var user = Parse.Object.extend("User");
@@ -19,7 +19,12 @@ Parse.initialize(
       const profilepic = user.get('profilepic')._url;
       document.querySelector('.first-name').innerHTML=username;
       document.querySelector('.Contact').append(contact);
-      document.querySelector('.Email').append(email);
+      if(email==undefined){
+        document.querySelector('.Email').append("Please Verify your email!");
+      }
+      else{
+        document.querySelector('.Email').append(email);
+      }
       console.log(profilepic);
       const imgurl="url("+profilepic+")"
       document.querySelector('.profile-image').style.backgroundImage= imgurl;

@@ -80,5 +80,6 @@ function resetPassword(email) {
       console.log("The login failed with error: " + error.code + " " + error.message);
       modal.setFooterContent('<h4> Email not Registered! </h4>');
       modal.close();
+      modal.setFooterContent('');
     });
 }
