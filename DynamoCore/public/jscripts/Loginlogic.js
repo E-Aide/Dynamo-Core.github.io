@@ -54,6 +54,16 @@ if(Ucurrent!=null){
 }
 else{
   document.querySelector('#auraButtontext.LoGup').classList.remove("disableMenu");
+  document.querySelector('#auraButtontext.LoGup').classList.add("enabledMenu");
   document.querySelector('.logged').classList.remove("enabledMenu");
+  document.querySelector('.logged').classList.add("disableMenu");
 }
 
+function logout(){
+  Parse.User.logOut();
+  if (Parse.User.current() == null) {
+      alert('Successfully logged out!', 'No user is logged in anymore!');
+      window.open('../../views/DynamoCore.html',"_self");
+    }
+  return true; 
+}
