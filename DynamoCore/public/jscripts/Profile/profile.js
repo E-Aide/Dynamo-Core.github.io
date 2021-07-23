@@ -34,3 +34,26 @@ Parse.initialize(
     }
   })();
   
+  (async () => {
+    const SeminarList = Parse.Object.extend('SeminarList');
+    const query = new Parse.Query(SeminarList);
+    query.equalTo('HostObjID', Parse.User.current());
+    const results = await query.find();
+    try {
+      const results = await query.find();
+      for (const object of results) {
+        // Access the Parse Object attributes using the .GET method
+        const name = object.get('name');
+        const ID = object.get('ID');
+
+        var Section = document.getElementsByClassName("semDrop")[0];
+        var liE = document.createElement("li");
+        liE.classList.add("liE");
+        liE.innerHTML = name+"-"+ID;
+        Section.appendChild(liE);
+      }
+    } catch (error) {
+      console.error('Error while fetching SeminarList', error);
+    }
+  })();
+  

@@ -106,8 +106,8 @@
               <li class="auraButton">
                 <a
                   id="auraButtontext"
-                  href="../../vews/Projects/projectsMain.html"
-                  >COMMUNITY</a
+                  href="../../views/seminar/semMain.html"
+                  >SEMINAR</a
                 >
               </li>
               <li class="auraButton">
@@ -126,17 +126,37 @@
               </li>
             </ul>
             <ul class="nav navbar-nav navbar" id="loginNav">
-               <li>
-                <div class="dropdown logged">
-                  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="loggedInDis">
-                  </button>
-                  <ul class="dropdown-menu loggedDrop">
-                   <li><a href="../../views/Profile/profile.html" class="profileBtn">Profile</a></li>
-                   <li><a class="logoutButton" onclick="logout()">Log Out</a></li>
-                 </ul>
-                 </div>
-              </li>
-            </ul>
+                <li>
+                  <a
+                    id="auraButtontext"
+                    href="../../views/FORMS/sign_In.html"
+                    class="LoGup"
+                    ><span class="glyphicon glyphicon-user"></span> Login</a
+                  >
+                </li>
+                <li>
+                  <div class="dropdown logged">
+                    <button
+                      class="btn dropdown-toggle"
+                      type="button"
+                      data-toggle="dropdown"
+                      id="loggedInDis"
+                    ></button>
+                    <ul class="dropdown-menu loggedDrop">
+                      <li>
+                        <a
+                          href="../../views/Profile/profile.html"
+                          class="profileBtn"
+                          >Profile</a
+                        >
+                      </li>
+                      <li>
+                        <a class="logoutButton" onclick="logout()">Log Out</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
           </div>
         </nav>
       </div>
@@ -180,14 +200,20 @@
   <section class="statistics">
     <button class="icon arrow left"></button>
     <button class="icon arrow right"></button>
-    <p><strong>n1</strong> Followers</p>
-    <p><strong>n2</strong> Following</p>
-    <p><strong>n3</strong> Likes</p>
+     <div class="dropdown ">
+                  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="semDis">
+                  Seminars 
+                  </button>
+                  <ul class="dropdown-menu semDrop">
+                  <li>Name  -   Id</li>
+                 </ul>
+                 </div>
   </section>
   <button class="icon close"></button>
 </profilemain>
  <!--ContentsEND-->
     <script src="../../public/jscripts/Form-Login/index.js"></script>
+    <script src="../../public/jscripts/Loginlogic.js"></script>
     <!--Footer-->
     <footer class="footer-content">
       <div class="jumbotron text-md-left">

@@ -1,7 +1,7 @@
 Parse.initialize(
     "aC742iFhVWVr82DREWfariSl6puXp01vAsluN4mH",
     "huVOduZAMwxcOTOPVu16tXMeLQ1Aj9L6ItfuQjfY"
-  ); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+  ); 
   Parse.serverURL = "https://parseapi.back4app.com/";
   
 function signUp() {

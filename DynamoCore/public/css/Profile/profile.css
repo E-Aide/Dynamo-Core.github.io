@@ -276,3 +276,21 @@ h1.second-name {
     opacity: 1;
   }
 }
+
+.liE{
+  color: rgb(0 0 0);
+  font-family: 'Alegreya Sans SC';
+  background: aliceblue;
+}
+.semDrop{
+  font-family: 'Alegreya Sans SC';
+  color: rgb(218 0 0);
+}
+#semDis{
+    font-size: large;
+    font-family: 'Alegreya Sans SC';
+    width: 116px!important;
+    background: none!important;
+    transform: translateY(7px);
+
+}

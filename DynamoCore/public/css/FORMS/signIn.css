@@ -37,12 +37,13 @@ button {
 
 .form {
   position: relative;
-  width: 640px;
+  width: 630px;
   height: 90%;
   transition: transform 1.2s ease-in-out;
-  padding: 50px 30px 0;
+  padding: 40px 30px 0;
   margin-top: 28px;
   background: #fff;
+  border: #d4af7a 12px inset;
 }
 
 .sub-cont {
@@ -53,12 +54,13 @@ button {
   width: 900px;
   height: 100%;
   padding-left: 260px;
-  background: #030303;
+  background: #dadafd;
   transition: transform 1.2s ease-in-out;
 }
 
 .form.sign-up {
   width: 612px !important;
+  left: 10px;
 }
 
 .cont.s--signup .sub-cont {
@@ -106,6 +108,7 @@ button {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
+  border: #d4af7a 12px solid;
 }
 .cont.s--signup .img:before {
   transform: translate3d(640px, 0, 0);
@@ -326,4 +329,14 @@ input {
   border-left-color: lightcoral;
   border-bottom-color: transparent;
   border-right-color: transparent;
+}
+#registerBtn{
+  border: black 2px solid;
+  transform: translateY(55px);
+  font-family: 'Alegreya Sans SC';
+    font-size: large;
+}
+#registerBtn:hover{
+  background: #dadafd;
+  border-color: #ff9600;
 }

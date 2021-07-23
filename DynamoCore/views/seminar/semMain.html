@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../../public/css/Layout.css" />
     <link rel="stylesheet" href="../../public/css/connect/connect.css">
+    <link rel="stylesheet" href="../../public/css/Seminar/semMain.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -11,7 +12,7 @@
     />
     <link
       rel="icon"
-      href="../public/img/icon/LOGO_NoBackground.png"
+      href="../../public/img/icon/LOGO_NoBackground.png"
       sizes="16x16"
       type="image/x-icon"
     />
@@ -85,11 +86,13 @@
               <span><a id="head" href="#">Dynamo Core</a></span>
             </div>
             <ul class="nav navbar-nav navbar">
-              <li class="auraButton">
-                <a id="auraButtontext" href="../Community/community.html"
-                  >COMMUNITY</a
-                >
-              </li>
+             <li class="auraButton">
+                  <a
+                    id="auraButtontext"
+                    href="../../views/seminar/semMain.html"
+                    >SEMINAR</a
+                  >
+                </li>
               <li class="auraButton">
                 <a
                   id="auraButtontext"
@@ -112,6 +115,28 @@
                   ><span class="glyphicon glyphicon-user"></span> Login</a
                 >
               </li>
+              <li>
+                  <div class="dropdown logged">
+                    <button
+                      class="btn dropdown-toggle"
+                      type="button"
+                      data-toggle="dropdown"
+                      id="loggedInDis"
+                    ></button>
+                    <ul class="dropdown-menu loggedDrop">
+                      <li>
+                        <a
+                          href="../../views/Profile/profile.html"
+                          class="profileBtn"
+                          >Profile</a
+                        >
+                      </li>
+                      <li>
+                        <a class="logoutButton" onclick="logout()">Log Out</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
             </ul>
           </div>
         </nav>
@@ -128,6 +153,8 @@
         height="100%"
       />
     </div>
+    
+    <!--Upper contents Begins-->
           <div class="head">CONNECT</div>
           <div class="cont">
             A place to connect the dots globally and share, experience and discuss the current happenings.
@@ -135,20 +162,13 @@
             by the industry and to keep yourelf connected. 
           </div>     
       </div>
-      
+      <div class="SemGuest"> <h2 >Please login to Join/create! </h2></div>
+       <div class="SemLinkbtn"> <a class="BtGlt" href="../../views/seminar/Seminar.html">Join/Create Seminar</a></div>
   </section>
-
-    <!--Upper contents Begins-->
-    
-      
     <!--Upper contents END-->
 
-    <!--Lower Contents Begins-->
-    
-
-    <!--Lower Contents END-->
-
     <script src="../../public/jscripts/Loginlogic.js"></script>
+    <script src="../../public/jscripts/Seminar/semMain.js"></script>
     <!--Footer-->
 
     <footer class="footer-content">
