@@ -496,6 +496,7 @@ footer > .jumbotron {
 }
 #loggedInDis{
   width: 116px!important;
+  background: none!important;
 }
 #loggedInDis:hover{
   background: aliceblue;

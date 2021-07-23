@@ -88,6 +88,16 @@
                class="LoGin"
                onclick="logCheck()"><span class="glyphicon glyphicon-log-in "></span> Login</a>
           </li>
+           <li>
+                <div class="dropdown logged">
+                  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="loggedInDis">
+                  </button>
+                  <ul class="dropdown-menu loggedDrop">
+                   <li><a href="../../views/Profile/profile.html" class="profileBtn">Profile</a></li>
+                   <li><a class="logoutButton" onclick="logout()">Log Out</a></li>
+                 </ul>
+                 </div>
+              </li>
         </ul>
       </div>
     </nav>

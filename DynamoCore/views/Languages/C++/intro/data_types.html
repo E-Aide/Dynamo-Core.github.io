@@ -88,9 +88,7 @@
             </div>
             <ul class="nav navbar-nav navbar">
               <li class="auraButton">
-                <a
-                  id="auraButtontext"
-                  href="../../../Community/community.html"
+                <a id="auraButtontext" href="../../../Community/community.html"
                   >COMMUNITY</a
                 >
               </li>
@@ -117,6 +115,28 @@
                   class="LoGup"
                   ><span class="glyphicon glyphicon-user"></span> Login
                 </a>
+              </li>
+              <li>
+                <div class="dropdown logged">
+                  <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    id="loggedInDis"
+                  ></button>
+                  <ul class="dropdown-menu loggedDrop">
+                    <li>
+                      <a
+                        href="../../views/Profile/profile.html"
+                        class="profileBtn"
+                        >Profile</a
+                      >
+                    </li>
+                    <li>
+                      <a class="logoutButton" onclick="logout()">Log Out</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
           </div>
