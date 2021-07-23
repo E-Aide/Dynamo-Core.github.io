@@ -6,7 +6,7 @@ button {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 .bodyBackground {
-  background: url(../../img/backgrounds/signBack.jpg);
+  background: url(../../img/seminar/seminarBG.jpg);
   filter: blur(8px);
   -webkit-filter: blur(8px);
   height: 100%;
