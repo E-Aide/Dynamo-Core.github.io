@@ -4,7 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../../public/css/Layout.css" />
     <link rel="stylesheet" href="../../public/css/FORMS/seminar.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.15.1/tingle.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.15.1/tingle.css"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -38,7 +41,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js"></script>
-    <meta content="Back4App Inc" name="author">
+    <meta content="Back4App Inc" name="author" />
     <!--Icons-->
     <link
       rel="stylesheet"
@@ -57,8 +60,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.15.1/tingle.min.js"></script>
-     <!-- Here goes the Parse SDK for JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.15.1/tingle.min.js"></script>
+    <!-- Here goes the Parse SDK for JavaScript -->
     <script
       type="text/javascript"
       src="https://npmcdn.com/parse/dist/parse.min.js"
@@ -77,7 +80,7 @@
 
   <body>
     <!-- horizontal navbar -->
-       <header>
+    <header>
       <div class="wrapHead">
         <nav class="navbar navbar-default" id="mNavbar">
           <div class="container-fluid" id="navtop">
@@ -92,23 +95,29 @@
                   class="d-inline-block align-top"
                 />
               </a>
-              <span><a id="head" href="../../views/DynamoCore.html">Dynamo Core</a></span>
+              <span
+                ><a id="head" href="../../views/DynamoCore.html"
+                  >Dynamo Core</a
+                ></span
+              >
             </div>
             <ul class="nav navbar-nav navbar">
-             <li class="auraButton">
-                  <a
-                    id="auraButtontext"
-                    href="../../views/seminar/semMain.html"
-                    >SEMINAR</a
-                  >
-                </li>
               <li class="auraButton">
-                <a id="auraButtontext" href="../../views/Articles/ArticlesMain.html"
+                <a id="auraButtontext" href="../../views/seminar/semMain.html"
+                  >SEMINAR</a
+                >
+              </li>
+              <li class="auraButton">
+                <a
+                  id="auraButtontext"
+                  href="../../views/Articles/ArticlesMain.html"
                   >ARTICLES</a
                 >
               </li>
               <li class="auraButton">
-                <a id="auraButtontext" href="../../views/Languages/LangGuide.html"
+                <a
+                  id="auraButtontext"
+                  href="../../views/Languages/LangGuide.html"
                   >LANG-GUIDES</a
                 >
               </li>
@@ -123,27 +132,27 @@
                 </a>
               </li>
               <li>
-                  <div class="dropdown logged">
-                    <button
-                      class="btn dropdown-toggle"
-                      type="button"
-                      data-toggle="dropdown"
-                      id="loggedInDis"
-                    ></button>
-                    <ul class="dropdown-menu loggedDrop">
-                      <li>
-                        <a
-                          href="../../views/Profile/profile.html"
-                          class="profileBtn"
-                          >Profile</a
-                        >
-                      </li>
-                      <li>
-                        <a class="logoutButton" onclick="logout()">Log Out</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
+                <div class="dropdown logged">
+                  <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    id="loggedInDis"
+                  ></button>
+                  <ul class="dropdown-menu loggedDrop">
+                    <li>
+                      <a
+                        href="../../views/Profile/profile.html"
+                        class="profileBtn"
+                        >Profile</a
+                      >
+                    </li>
+                    <li>
+                      <a class="logoutButton" onclick="logout()">Log Out</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </div>
         </nav>
@@ -153,23 +162,36 @@
     <div class="bodyBackground"></div>
     <canvas class="background"></canvas>
 
-
     <div class="cont">
-      <div  class="form sign-in" >
+      <div class="form sign-in">
         <h2>Join Seminar,</h2>
         <label class="inputRow">
           <span>Name</span>
-          <input type="text" name="aName" id="aName" title="Name of the attendant" required />
+          <input
+            type="text"
+            name="aName"
+            id="aName"
+            title="Name of the attendant"
+            required
+          />
         </label>
         <label class="inputRow">
           <span>Seminar ID</span>
-          <input type="text" name="semID" id="semID"  title="ID of the seminar" required />
+          <input
+            type="text"
+            name="semID"
+            id="semID"
+            title="ID of the seminar"
+            required
+          />
         </label>
         <label class="inputRow">
           <span>E-mail</span>
           <input type="email" name="Hostemail" id="Hostemail" required />
         </label>
-        <button class="submit" onclick="joinSeminar()">Register</button>
+        <button class="submit" id="registerBtn" onclick="joinSeminar()">
+          Register
+        </button>
       </div>
       <div class="sub-cont">
         <div class="Signimg">
@@ -179,43 +201,63 @@
           </div>
           <div class="img__text m--in">
             <h2>Wanna attend a seminar?</h2>
-            <p>
-              If you already have an account, just sign up for the event!
-            </p>
+            <p>If you already have an account, just sign up for the event!</p>
           </div>
           <div class="img__btn">
             <span class="m--up">Host</span>
             <span class="m--in">Register</span>
           </div>
         </div>
-        <div  class="form sign-up" >
+        <div class="form sign-up">
           <h2>Fill up the form</h2>
           <div class="signupDetails">
-            <div class="form-row ">
+            <div class="form-row">
               <div class="col-md-8">
-                <label for="topic" >Topic:<span class="required"></span> </label>
-                <input type="text" id="topic" name="topic" class="form-control" title="Use only alphabets, digits and underscore" placeholder="Enter topic of the seminar" required>
+                <label for="topic">Topic:<span class="required"></span> </label>
+                <input
+                  type="text"
+                  id="topic"
+                  name="topic"
+                  class="form-control"
+                  title="Use only alphabets, digits and underscore"
+                  placeholder="Enter topic of the seminar"
+                  required
+                />
               </div>
             </div>
-            <div class=" col-md-8 ">
+            <div class="col-md-8">
               <label for="email">Host E-mail ID:<span></span> </label>
-              <input type="email" name="email" class="form-control " id="HostEmail" placeholder=" Enter host's Email Address ">
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="HostEmail"
+                placeholder=" Enter host's Email Address "
+              />
             </div>
             <div class="col-md-8">
-              <label for="topic" >Speaker:<span class="required"></span> </label>
-              <input type="text" id="speaker" name="speaker" class="form-control" title="Use only alphabets" placeholder="Enter speaker's name" required>
+              <label for="topic">Speaker:<span class="required"></span> </label>
+              <input
+                type="text"
+                id="speaker"
+                name="speaker"
+                class="form-control"
+                title="Use only alphabets"
+                placeholder="Enter speaker's name"
+                required
+              />
             </div>
-
-           </div>
-          <button class="button" id="registerBtn" onclick="hostSeminar()">Host!!</button>
           </div>
+          <button class="button" id="registerBtn" onclick="hostSeminar()">
+            Host!!
+          </button>
         </div>
       </div>
-
+    </div>
 
     <script src="../../public/jscripts/Form-Login/form.js"></script>
     <script src="../../public/jscripts/Loginlogic.js"></script>
-     <script src="../../public/jscripts/seminar/seminar.js"></script>
+    <script src="../../public/jscripts/seminar/seminar.js"></script>
 
     <!--Continue here-->
 
@@ -231,7 +273,11 @@
         >
         <div class="row">
           <div class="col-md-5">
-            <img src="../../public/img/icon/DC.png" alt="footer-img" id="footer-img" />
+            <img
+              src="../../public/img/icon/DC.png"
+              alt="footer-img"
+              id="footer-img"
+            />
             <h3 class="footer-text text-left">Dynamo Core:</h3>
             <p id="footercontent">
               Dynamo Core was made in the hopes to provide a place for the
