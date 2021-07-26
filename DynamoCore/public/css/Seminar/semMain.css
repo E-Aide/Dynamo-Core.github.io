@@ -1,3 +1,7 @@
+body{
+  user-select: none;
+}
+
 .BtGlt,
 .BtGlt::after {
   width: 440px;
